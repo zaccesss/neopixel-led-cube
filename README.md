@@ -366,10 +366,10 @@ neopixel-led-cube/
 
 For questions, suggestions or collaboration opportunities related to this project, please open an issue in the repository or contact the development team through the provided channels.
 
-You can reach Zac at: **offices.isaac@gmail.com** or via my **GitHub profile**.
+You can reach Zac at: **contact@zacess.com** or via my **GitHub profile**.
 
 **Project Status:** Completed  
-**Last Updated:** December 2025
+**Last Updated:** April 2026
 
 ---
 
