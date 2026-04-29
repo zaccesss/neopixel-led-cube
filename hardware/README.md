@@ -19,7 +19,7 @@ This directory documents the physical components, circuit design and assembly pr
 | Resistor | 10kΩ | 1 | LDR voltage divider |
 | Breadboard | Standard 830-point | 1 | Component mounting |
 | Jumper Wires | Male-to-male | ~20 | Circuit connections |
-| Copper Wire | 22-24 AWG solid core | ~5 meters | LED cube structure |
+| Copper Wire | 22-24 AWG solid core | ~5 metres | LED cube structure |
 | Power Supply | 5V DC, 2A minimum | 1 | System power |
 | Power Jack | 2.1mm barrel connector | 1 | Power input |
 | USB Cable | Type A to Type B | 1 | Programming and serial |
@@ -48,11 +48,11 @@ The power system uses a 5V DC supply with a minimum 2A rating to safely drive al
 **Current Protection:**
 - Large electrolytic capacitor (1000µF) across 5V and GND rails
 - Capacitor placed physically close to first LED in chain
-- Smooths voltage spikes during rapid LED color changes
+- Smooths voltage spikes during rapid LED colour changes
 
 **Estimated Current Draw:**
 - All LEDs at maximum white: ~3.8A (64 LEDs × 60mA)
-- Typical operation: 1.5-2A (mixed colors and brightness)
+- Typical operation: 1.5-2A (mixed colours and brightness)
 - Recommended supply rating: 2A minimum, 3A preferred
 
 ### Signal Connections
@@ -61,7 +61,7 @@ The power system uses a 5V DC supply with a minimum 2A rating to safely drive al
 - Single data wire from Arduino pin D6 to first LED in chain
 - Each subsequent LED receives data from previous LED
 - Total of 64 LEDs wired in series
-- Keep data line short to minimize signal degradation
+- Keep data line short to minimise signal degradation
 
 **Button Inputs:**
 - Power button connected between D2 and GND

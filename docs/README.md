@@ -43,8 +43,8 @@ The spreadsheet provides detailed financial tracking for the project, demonstrat
 **Project Phases:**
 1. Planning and design (component selection, circuit design)
 2. Hardware assembly (cube construction, enclosure fabrication)
-3. Software development (pattern programming, sensor integration)
-4. Testing and refinement (debugging, optimization)
+3. Software development (pattern programming and sensor integration)
+4. Testing and refinement (debugging and optimisation)
 5. Documentation (technical writing, media production)
 
 ### Related hardware-overview.pptx
@@ -102,7 +102,7 @@ The portfolio uses visual aids (screenshots and diagrams) combined with descript
 
 **Contents:**
 Similar to software-portfolio.docx with improvements to:
-- Visual layout and organization
+- Visual layout and organisation
 - Code annotation clarity
 - Flowchart presentation
 - Technical accuracy
@@ -204,10 +204,10 @@ All documents in this directory represent the final submitted versions for acade
 
 For complete project information, refer to:
 
-- Root README.md – Comprehensive project overview
-- software/README.md – Software architecture details
-- hardware/README.md – Circuit design and assembly instructions
-- media/README.md – Media file catalog and usage
+- Root README.md - Comprehensive project overview
+- software/README.md - Software architecture details
+- hardware/README.md - Circuit design and assembly instructions
+- media/README.md - Media file catalogue and usage
 
 ## Contact
 

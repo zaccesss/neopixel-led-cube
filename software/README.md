@@ -19,11 +19,11 @@ software/
 
 ### Input Processing
 
-The system monitors two physical buttons and one analog sensor:
+The system monitors two physical buttons and one analogue sensor:
 
-- **Power Button (D2)** – Toggles the entire system on and off. Uses edge detection to prevent repeated triggering.
-- **Mode Button (D3)** – Cycles through four distinct animation patterns. Active only when system is powered on.
-- **LDR Sensor (A0)** – Continuously reads ambient light levels and maps the value to appropriate LED brightness.
+- **Power Button (D2)** - Toggles the entire system on and off. Uses edge detection to prevent repeated triggering.
+- **Mode Button (D3)** - Cycles through four distinct animation patterns. Active only when system is powered on.
+- **LDR Sensor (A0)** - Continuously reads ambient light levels and maps the value to appropriate LED brightness.
 
 Button inputs use software debouncing with a 200ms delay to ensure clean state transitions. The code implements rising-edge detection by comparing current and previous button states.
 
@@ -31,16 +31,16 @@ Button inputs use software debouncing with a 200ms delay to ensure clean state t
 
 The software includes four pre-programmed lighting patterns:
 
-1. **Color Wipe** – Sequential LED illumination in red, green and blue
-2. **Smooth RGB Fade** – Synchronized fading across all LEDs
-3. **Fire Effect** – Realistic flame simulation using heat mapping
-4. **Rainbow Cycle** – Continuous rainbow gradient animation
+1. **Colour Wipe** - Sequential LED illumination in red, green and blue
+2. **Smooth RGB Fade** - Synchronous fading across all LEDs
+3. **Fire Effect** - Realistic flame simulation using heat mapping
+4. **Rainbow Cycle** - Continuous rainbow gradient animation
 
 Each pattern is implemented as a separate function with non-blocking timing control using `millis()` timestamps. This architecture allows smooth animation while maintaining responsive input handling.
 
 ### Brightness Adaptation
 
-The LDR sensor reading (0-1023 analog value) is mapped to LED brightness (20-255 PWM value) using an inverted relationship. Higher ambient light results in dimmer LEDs to reduce visual fatigue and power consumption. The minimum brightness threshold of 20 ensures LEDs remain visible in all lighting conditions.
+The LDR sensor reading (0-1023 analogue value) is mapped to LED brightness (20-255 PWM value) using an inverted relationship. Higher ambient light results in dimmer LEDs to reduce visual fatigue and power consumption. The minimum brightness threshold of 20 ensures LEDs remain visible in all lighting conditions.
 
 ### Audio Feedback
 
@@ -55,40 +55,40 @@ Real-time system state information is transmitted via serial output at 9600 baud
 - LDR sensor readings
 - Calculated brightness values
 
-This diagnostic information is invaluable for troubleshooting and understanding system behavior.
+This diagnostic information is invaluable for troubleshooting and understanding system behaviour.
 
-## Code Organization
+## Code Organisation
 
 ### Main Functions
 
-- `setup()` – Initializes the NeoPixel library, configures pin modes and establishes serial communication
-- `loop()` – Main execution loop that handles button polling, sensor reading and pattern rendering
-- `beep()` – Audio feedback generator
+- `setup()` - Initialises the NeoPixel library, configures pin modes and establishes serial communication
+- `loop()` - Main execution loop that handles button polling, sensor reading and pattern rendering
+- `beep()` - Audio feedback generator
 
 ### Pattern Functions
 
-- `colorCycle()` – Implements sequential color wipe animation
-- `RGBLoop()` – Handles synchronized RGB fade effect
-- `Fire()` – Renders realistic flame simulation
-- `rainbowCycle()` – Generates moving rainbow gradient
+- `colourCycle()` - Implements sequential colour wipe animation
+- `RGBLoop()` - Handles synchronous RGB fade effect
+- `Fire()` - Renders realistic flame simulation
+- `rainbowCycle()` - Generates moving rainbow gradient
 
 ### Helper Functions
 
-- `showStrip()` – Updates LED display with current color values
-- `setPixel()` – Sets individual LED color
-- `setAll()` – Sets all LEDs to the same color
-- `setPixelHeatColor()` – Converts heat values to flame colors
-- `Wheel()` – Maps position to rainbow color spectrum
+- `showStrip()` - Updates LED display with current colour values
+- `setPixel()` - Sets individual LED colour
+- `setAll()` - Sets all LEDs to the same colour
+- `setPixelHeatColour()` - Converts heat values to flame colours
+- `Wheel()` - Maps position to rainbow colour spectrum
 
 ## Dependencies
 
 The software requires the following library:
 
-- **Adafruit NeoPixel** – Official library for controlling WS2812B addressable LEDs
+- **Adafruit NeoPixel** - Official library for controlling WS2812B addressable LEDs
 
 Install via Arduino Library Manager:
 ```
-Sketch → Include Library → Manage Libraries → Search "Adafruit NeoPixel"
+Sketch -> Include Library -> Manage Libraries -> Search "Adafruit NeoPixel"
 ```
 
 ## Compilation and Upload
@@ -102,20 +102,20 @@ Sketch → Include Library → Manage Libraries → Search "Adafruit NeoPixel"
 ### Steps
 
 1. Open `neopixel_cube.ino` in Arduino IDE
-2. Select board: Tools → Board → Arduino Uno
-3. Select port: Tools → Port → [appropriate COM port]
-4. Verify code: Sketch → Verify/Compile
-5. Upload to board: Sketch → Upload
+2. Select board: Tools -> Board -> Arduino Uno
+3. Select port: Tools -> Port -> [appropriate COM port]
+4. Verify code: Sketch -> Verify/Compile
+5. Upload to board: Sketch -> Upload
 
 ### Serial Monitor
 
 To view real-time debug output:
 
-1. Tools → Serial Monitor
+1. Tools -> Serial Monitor
 2. Set baud rate to 9600
 3. Observe system state messages and sensor readings
 
-## Customization
+## Customisation
 
 The software is designed for easy modification:
 
