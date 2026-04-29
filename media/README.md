@@ -28,13 +28,13 @@ This directory contains all visual and video media assets for the NeoPixel LED C
 **Description:** Completed LED cube illuminated at full brightness  
 **Purpose:** Showcases final appearance and light output  
 **Usage:** Project showcase, documentation header  
-**Resolution:** High-resolution photograph with vibrant color capture
+**Resolution:** High-resolution photograph with vibrant colour capture
 
 #### cube-lit-full-bright-front-2.jpeg
 **Description:** Alternate front view of the completed cube at full brightness  
 **Purpose:** Provides an additional validation angle for brightness and alignment  
 **Usage:** Project showcase and gallery documentation  
-**Resolution:** High-resolution photograph with vibrant color capture
+**Resolution:** High-resolution photograph with vibrant colour capture
 
 #### cube-enclosure-final-setup-1.jpeg
 **Description:** Complete assembled project in enclosure  
@@ -50,13 +50,13 @@ This directory contains all visual and video media assets for the NeoPixel LED C
 
 #### power-circuit-connected-to-cube-1.jpeg
 **Description:** Power distribution wiring connected to the cube  
-**Purpose:** Documents LED power delivery and wiring organization  
+**Purpose:** Documents LED power delivery and wiring organisation  
 **Usage:** Hardware assembly reference and power wiring verification  
 **Resolution:** High-resolution photograph showing wiring detail
 
 #### enclosure-arduino-breadboard-top-1.jpeg
 **Description:** Top view of internal component layout  
-**Purpose:** Shows Arduino, breadboard and wiring organization  
+**Purpose:** Shows Arduino, breadboard and wiring organisation  
 **Usage:** Assembly reference, cable management guide  
 **Resolution:** High-resolution photograph of internal configuration
 
@@ -76,7 +76,7 @@ This directory contains all visual and video media assets for the NeoPixel LED C
 **Resolution:** [Resolution varies based on actual video]  
 **Contents:**
 - Power-on sequence
-- Color Wipe pattern demonstration
+- Colour Wipe pattern demonstration
 - Smooth RGB Fade pattern demonstration
 - Fire Effect pattern demonstration
 - Rainbow Cycle pattern demonstration
@@ -96,7 +96,7 @@ This directory contains all visual and video media assets for the NeoPixel LED C
 - Feature demonstration and explanation
 - Construction process highlights
 
-## File Organization
+## File Organisation
 
 ### Naming Convention
 

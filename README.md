@@ -19,6 +19,12 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
 </p>
 
+## Project Walkthrough
+
+<video src="media/neopixel-description.mp4" controls width="100%"></video>
+
+If the video does not render in your browser, open [neopixel-description.mp4](media/neopixel-description.mp4).
+
 
 # Quick Navigation
 <p align="center">
@@ -45,7 +51,7 @@
 
 The NeoPixel LED Cube Project is an interactive 4×4×4 LED display system developed as part of an academic engineering assignment. This adaptive lighting system combines hardware assembly with embedded software to create a fully functional LED cube capable of displaying multiple dynamic patterns while automatically adjusting brightness based on ambient light conditions.
 
-The project demonstrates practical applications of digital input handling, analog sensing, PWM-based LED control and real-time logic in embedded systems. The cube features user-controlled pattern selection, automatic brightness adjustment via an LDR sensor and audio feedback through a buzzer, providing an engaging and responsive visual experience.
+The project demonstrates practical applications of digital input handling, analogue sensing, PWM-based LED control and real-time logic in embedded systems. The cube features user-controlled pattern selection, automatic brightness adjustment via an LDR sensor and audio feedback through a buzzer, providing an engaging and responsive visual experience.
 
 **Lead Developer:** Isaac "Zac" Adjei  
 **Team:** NeoPixel Innovators   
@@ -56,13 +62,13 @@ The project demonstrates practical applications of digital input handling, analo
 
 ## 2. Key Features
 
-- **4×4×4 LED Matrix Architecture** – 64 individually addressable WS2812B NeoPixel LEDs arranged in a cubic structure
-- **Four Dynamic Animation Modes** – Color Wipe, Smooth RGB Fade, Fire Effect and Rainbow Cycle
-- **Adaptive Brightness Control** – LDR sensor automatically adjusts LED intensity based on ambient light
-- **Interactive User Controls** – Physical buttons for power toggle and mode cycling
-- **Audio Feedback System** – Buzzer provides confirmation tones for user interactions
-- **Real-Time Serial Monitoring** – Debug output displays system state, brightness levels and active patterns
-- **Modular Software Design** – Clean, well-documented code structure for easy modification and expansion
+- **4×4×4 LED Matrix Architecture** - 64 individually addressable WS2812B NeoPixel LEDs arranged in a cubic structure
+- **Four Dynamic Animation Modes** - Colour Wipe, Smooth RGB Fade, Fire Effect and Rainbow Cycle
+- **Adaptive Brightness Control** - LDR sensor automatically adjusts LED intensity based on ambient light
+- **Interactive User Controls** - Physical buttons for power toggle and mode cycling
+- **Audio Feedback System** - Buzzer provides confirmation tones for user interactions
+- **Real-Time Serial Monitoring** - Debug output displays system state, brightness levels and active patterns
+- **Modular Software Design** - Clean, well-documented code structure for easy modification and expansion
 
 ---
 
@@ -76,7 +82,7 @@ The project demonstrates practical applications of digital input handling, analo
 | WS2812B LEDs | 5V addressable RGB | 64 | LED cube matrix |
 | Power Button | Digital momentary switch | 1 | System power toggle |
 | Mode Button | Digital momentary switch | 1 | Pattern selection |
-| LDR Sensor | Analog light sensor | 1 | Ambient brightness detection |
+| LDR Sensor | Analogue light sensor | 1 | Ambient brightness detection |
 | Buzzer | 5V active buzzer | 1 | Audio feedback |
 | Electrolytic Capacitor | 1000µF, 6.3V+ | 1 | Power supply smoothing |
 | Breadboard | Standard size | 1 | Component mounting |
@@ -91,7 +97,7 @@ The project demonstrates practical applications of digital input handling, analo
 | D3 | Mode Button | Digital input (pull-up) |
 | D4 | Buzzer | Digital output |
 | D6 | NeoPixel Data | Data output to LED strip |
-| A0 | LDR Sensor | Analog input (0-1023) |
+| A0 | LDR Sensor | Analogue input (0-1023) |
 | 5V | Power Rail | Positive supply (+) |
 | GND | Ground | Common ground (-) |
 
@@ -99,11 +105,11 @@ The project demonstrates practical applications of digital input handling, analo
 
 The circuit design incorporates several key safety and performance features:
 
-- **Shared Ground Architecture** – All components share a common ground connection with the Arduino to ensure stable signal communication
-- **Power Supply Decoupling** – A large electrolytic capacitor on the 5V rail protects the LEDs from voltage spikes during rapid switching
-- **Current Limiting** – Power supply rated at minimum 2A to safely drive all 64 LEDs at full brightness
-- **Button Debouncing** – Software-based debouncing prevents false triggering from mechanical switch bounce
-- **Signal Integrity** – Short data line from Arduino to first LED minimizes signal degradation
+- **Shared Ground Architecture** - All components share a common ground connection with the Arduino to ensure stable signal communication
+- **Power Supply Decoupling** - A large electrolytic capacitor on the 5V rail protects the LEDs from voltage spikes during rapid switching
+- **Current Limiting** - Power supply rated at minimum 2A to safely drive all 64 LEDs at full brightness
+- **Button Debouncing** - Software-based debouncing prevents false triggering from mechanical switch bounce
+- **Signal Integrity** - Short data line from Arduino to first LED minimises signal degradation
 
 ---
 
@@ -111,41 +117,41 @@ The circuit design incorporates several key safety and performance features:
 
 ### 4.1 Code Structure
 
-The software is organized around a state machine architecture with real-time input processing and pattern rendering:
+The software is organised around a state machine architecture with real-time input processing and pattern rendering:
 
 **Main Components:**
-- **Setup Function** – Initializes hardware peripherals, configures pin modes and establishes serial communication
-- **Loop Function** – Continuously polls button states, reads sensor data and executes the active animation pattern
-- **Pattern Functions** – Four independent animation routines with non-blocking timing control
-- **Helper Functions** – Utility routines for LED control, color conversion and display updates
+- **Setup Function** - Initialises hardware peripherals, configures pin modes and establishes serial communication
+- **Loop Function** - Continuously polls button states, reads sensor data and executes the active animation pattern
+- **Pattern Functions** - Four independent animation routines with non-blocking timing control
+- **Helper Functions** - Utility routines for LED control, colour conversion and display updates
 
 ### 4.2 Animation Patterns
 
-#### Mode 0: Color Wipe
+#### Mode 0: Colour Wipe
 Sequentially illuminates each LED in a cascading pattern, cycling through red, green and blue. This pattern creates a smooth wave effect across the cube structure.
 
 #### Mode 1: Smooth RGB Fade
-All LEDs fade in and out synchronously, transitioning between red, green and blue. The fade effect uses incremental brightness adjustment for smooth color transitions.
+All LEDs fade in and out synchronously, transitioning between red, green and blue. The fade effect uses incremental brightness adjustment for smooth colour transitions.
 
 #### Mode 2: Fire Effect
-Simulates realistic flickering flames using a heat simulation algorithm. Each LED is assigned a dynamic heat value that determines its color, ranging from deep red through orange to bright yellow-white.
+Simulates realistic flickering flames using a heat simulation algorithm. Each LED is assigned a dynamic heat value that determines its colour, ranging from deep red through orange to bright yellow-white.
 
 #### Mode 3: Rainbow Cycle
-Displays a moving rainbow gradient across the entire LED array. The color wheel algorithm ensures smooth hue transitions and continuous animation flow.
+Displays a moving rainbow gradient across the entire LED array. The colour wheel algorithm ensures smooth hue transitions and continuous animation flow.
 
 ### 4.3 Brightness Control System
 
 The adaptive brightness system maps the LDR sensor reading to LED intensity:
 
-- **Sensor Range:** 0-1023 (10-bit analog reading)
+- **Sensor Range:** 0-1023 (10-bit analogue reading)
 - **Brightness Range:** 20-255 (8-bit PWM value)
-- **Mapping Logic:** Inverted relationship – brighter ambient light results in dimmer LEDs to reduce eye strain
+- **Mapping Logic:** Inverted relationship - brighter ambient light results in dimmer LEDs to reduce eye strain
 - **Update Frequency:** Real-time adjustment on every loop iteration
 - **Minimum Threshold:** 20/255 ensures LEDs remain visible in all lighting conditions
 
 ### 4.4 Required Libraries
 
-- **Adafruit NeoPixel** – Provides low-level control interface for WS2812B LED strips
+- **Adafruit NeoPixel** - Provides low-level control interface for WS2812B LED strips
 
 ---
 
@@ -166,7 +172,7 @@ The LED cube uses a custom copper wire frame structure that provides both mechan
 
 The wooden enclosure houses the Arduino, breadboard and power distribution components while providing a stable platform for the LED cube. The design includes:
 
-- Cable management channels to organize wiring
+- Cable management channels to organise wiring
 - Ventilation space to prevent heat buildup
 - Access ports for USB programming and power input
 - Front-panel mounting positions for control buttons
@@ -202,7 +208,7 @@ Brightness adjusts automatically based on ambient light detected by the LDR sens
 | Microcontroller | Arduino Uno (ATmega328P) |
 | Clock Speed | 16 MHz |
 | Serial Baud Rate | 9600 bps |
-| LDR Analog Resolution | 10-bit (0-1023) |
+| LDR Analogue Resolution | 10-bit (0-1023) |
 | LED Brightness Resolution | 8-bit (0-255) |
 
 ---
@@ -219,7 +225,7 @@ The Arduino continuously transmits diagnostic information via serial communicati
 **Example Output:**
 ```
 Setup complete. Ready.
-System ON - Pattern: Color Wipe
+System ON - Pattern: Colour Wipe
 LDR: 512 | Brightness: 137
 LDR: 498 | Brightness: 144
 Pattern: Smooth RGB Fade
@@ -234,16 +240,16 @@ LDR: 720 | Brightness: 85
 
 The project includes comprehensive visual documentation:
 
-- **cube-build-layer-top-view-1.jpeg** – Construction process showing layer assembly
-- **cube-lit-full-bright-front-1.jpeg** – Completed cube displaying full brightness pattern
-- **power-circuit-capacitor-closeup-1.jpeg** – Detail view of power supply filtering
-- **enclosure-arduino-breadboard-top-1.jpeg** – Internal component layout
-- **cube-enclosure-final-setup-1.jpeg** – Final assembled project
+- **cube-build-layer-top-view-1.jpeg** - Construction process showing layer assembly
+- **cube-lit-full-bright-front-1.jpeg** - Completed cube displaying full brightness pattern
+- **power-circuit-capacitor-closeup-1.jpeg** - Detail view of power supply filtering
+- **enclosure-arduino-breadboard-top-1.jpeg** - Internal component layout
+- **cube-enclosure-final-setup-1.jpeg** - Final assembled project
 
 ### 9.2 Video Content
 
-- **neopixel-demo.mp4** – Full demonstration of all four animation patterns
-- **neopixel-description.mp4** – Project walkthrough and technical explanation
+- **neopixel-demo.mp4** - Full demonstration of all four animation patterns
+- **neopixel-description.mp4** - Project walkthrough and technical explanation
 
 ---
 
@@ -251,12 +257,12 @@ The project includes comprehensive visual documentation:
 
 Potential improvements and expansions for future development:
 
-- **Wireless Control** – Integration of Bluetooth or Wi-Fi module for remote pattern selection and parameter adjustment
-- **Audio Reactivity** – Addition of microphone sensor to create sound-responsive lighting effects
-- **Extended Pattern Library** – Implementation of additional animation algorithms such as 3D spirals, plane sweeps and particle effects
-- **Mobile Application** – Development of companion smartphone app for advanced control and customization
-- **Persistence of Vision Effects** – High-speed pattern switching to create complex visual illusions
-- **Temperature Monitoring** – Addition of thermal sensor to prevent LED overheating during extended operation
+- **Wireless Control** - Integration of Bluetooth or Wi-Fi module for remote pattern selection and parameter adjustment
+- **Audio Reactivity** - Addition of microphone sensor to create sound-responsive lighting effects
+- **Extended Pattern Library** - Implementation of additional animation algorithms such as 3D spirals, plane sweeps and particle effects
+- **Mobile Application** - Development of companion smartphone app for advanced control and customisation
+- **Persistence of Vision Effects** - High-speed pattern switching to create complex visual illusions
+- **Temperature Monitoring** - Addition of thermal sensor to prevent LED overheating during extended operation
 
 ---
 
@@ -270,7 +276,7 @@ This project is released under the MIT License with an additional academic use n
 
 Copyright (c) 2024 Isaac "Zac" Adjei, NeoPixel Innovators 
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense and/or sell copies of the Software and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
@@ -297,10 +303,10 @@ This project was designed and developed by **Isaac “Zac” Adjei** & **Neopixe
 
 The project is organised into separate folders for software, hardware, documentation and media so it is easy to navigate and reuse parts of the work.
 
--  **docs/** – [Documentation folder](docs/) – reports, portfolios, planning files and final presentation  
-- **hardware/** – [Hardware resources](hardware/) – hardware overview slides and build notes  
-- **media/** – [Images and videos](media/) – photos and videos used in reports and the README  
-- **software/** – [Arduino code and software docs](software/) – Arduino firmware and supporting documentation
+-  **docs/** - [Documentation folder](docs/) - reports, portfolios, planning files and final presentation  
+- **hardware/** - [Hardware resources](hardware/) - hardware overview slides and build notes  
+- **media/** - [Images and videos](media/) - photos and videos used in reports and the README  
+- **software/** - [Arduino code and software docs](software/) - Arduino firmware and supporting documentation
 
 
 <details>
@@ -373,7 +379,7 @@ You can reach Zac at: **contact@zacess.com** or via my **GitHub profile**.
 Yes, but attribution is required under the License & Academic Use Notice.
 
 ### Can I add more LED patterns?
-Absolutely. The software is modular – add another case to the mode switch.
+Absolutely. The software is modular - add another case to the mode switch.
 
 ### Can I adapt this for a 5×5×5 cube?
 Yes. Update NUM_LEDS and adjust wiring accordingly.
