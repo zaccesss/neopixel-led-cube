@@ -284,7 +284,7 @@ This project was developed as part of an academic engineering assignment. While 
 
 **Lead Developer:** Isaac "Zac" Adjei  
 **Team:** NeoPixel Innovators 
-**Project Repository:**   
+**Project Repository:** https://github.com/zaccesss/neopixel-led-cube  
 **Dependencies:** Adafruit NeoPixel Library
 
 ### 11.3 Credits
@@ -315,13 +315,9 @@ neopixel-led-cube/
 │
 ├── docs/
 │   ├── README.md
-│   ├── code-screenshot-1.png
-│   ├── code-screenshot-2.png
 │   ├── finance-report.xlsx
 │   ├── gantt-chart.xlsx
 │   ├── market-analysis.docx
-│   ├── neopixel-demo.mp4
-│   ├── neopixel-description.mp4
 │   ├── notes-and-drafts.docx
 │   ├── presentation-final.pptx
 │   ├── software-portfolio.docx
@@ -332,12 +328,12 @@ neopixel-led-cube/
 │   └── hardware-overview.pptx
 │
 ├── media/
+│   ├── Gallery.md
 │   ├── README.md
 │   ├── code-screenshot-1.png
 │   ├── code-screenshot-2.png
 │   ├── cube-build-layer-top-view-1.jpeg
-│   ├── cube-build-layer-top-view-2.jpeg
-│   ├── cube-build-top-view-1.jpeg
+│   ├── cube-build-lit-view-1.jpeg
 │   ├── cube-enclosure-final-setup-1.jpeg
 │   ├── cube-frame-complete-angle-1.jpeg
 │   ├── cube-lit-full-bright-front-1.jpeg
@@ -351,11 +347,9 @@ neopixel-led-cube/
 │
 └── software/
     ├── README.md
-    ├── software-portfolio.docx
-    ├── software-portfolio-v2.docx
-    └── neopixel-cube/
+    └── neopixel_cube/
         ├── README.md
-        └── neopixel-cube.ino
+        └── neopixel_cube.ino
 ```
 
 </details>

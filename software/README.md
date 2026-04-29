@@ -10,9 +10,9 @@ The software architecture is designed around a state machine model that continuo
 ```
 software/
 ├── README.md (this file)
-└── neopixel-cube/
+└── neopixel_cube/
     ├── README.md
-    └── neopixel-cube.ino
+    └── neopixel_cube.ino
 ```
 
 ## Core Functionality
@@ -101,7 +101,7 @@ Sketch → Include Library → Manage Libraries → Search "Adafruit NeoPixel"
 
 ### Steps
 
-1. Open `neopixel-cube.ino` in Arduino IDE
+1. Open `neopixel_cube.ino` in Arduino IDE
 2. Select board: Tools → Board → Arduino Uno
 3. Select port: Tools → Port → [appropriate COM port]
 4. Verify code: Sketch → Verify/Compile
@@ -159,4 +159,4 @@ Change the buzzer pin or adjust the duration in the `beep()` function.
 - Test LDR functionality with Serial Monitor output
 - Check mapping range in code
 
-For additional details on specific functions and implementation, refer to the inline comments in `neopixel-cube.ino`.
+For additional details on specific functions and implementation, refer to the inline comments in `neopixel_cube.ino`.

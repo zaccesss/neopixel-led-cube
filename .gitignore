@@ -1,0 +1,9 @@
+.idea/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Local build outputs and temporary files
+*.tmp
+*.log
