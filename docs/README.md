@@ -47,7 +47,9 @@ The spreadsheet provides detailed financial tracking for the project, demonstrat
 4. Testing and refinement (debugging, optimization)
 5. Documentation (technical writing, media production)
 
-### hardware-overview.pptx
+### Related hardware-overview.pptx
+
+**Location:** `../hardware/hardware-overview.pptx`
 
 **Purpose:** Visual presentation of hardware design and assembly
 
@@ -108,6 +110,10 @@ Similar to software-portfolio.docx with improvements to:
 **Differences from Version 1:**
 Version 2 represents a refinement of the original portfolio with enhanced readability and more precise technical language while maintaining comprehensive coverage of all software components.
 
+## Related Media Files
+
+The following supporting media files are stored in `../media/` rather than this documentation directory.
+
 ### code-screenshot-1.png and code-screenshot-2.png
 
 **Purpose:** High-resolution code capture for documentation
@@ -119,8 +125,6 @@ Visual representation of key code sections, particularly:
 - Header and initialization code
 - Main loop structure
 - Pattern function implementations
-
-## Media Files
 
 ### neopixel-demo.mp4
 
@@ -186,11 +190,11 @@ The planning documents (gantt-chart, finance-report) demonstrate:
 | Market Analysis | .docx | Microsoft Word or compatible |
 | Finance Report | .xlsx | Microsoft Excel or compatible |
 | Gantt Chart | .xlsx | Microsoft Excel or compatible |
-| Hardware Overview | .pptx | Microsoft PowerPoint or compatible |
+| Hardware Overview | .pptx | Microsoft PowerPoint or compatible; stored in `hardware/` |
 | Notes and Drafts | .docx | Microsoft Word or compatible |
 | Software Portfolio | .docx | Microsoft Word or compatible |
-| Code Screenshots | .png | Image viewer |
-| Demo Videos | .mp4 | Video player |
+| Code Screenshots | .png | Image viewer; stored in `media/` |
+| Demo Videos | .mp4 | Video player; stored in `media/` |
 
 ## Document Revision History
 

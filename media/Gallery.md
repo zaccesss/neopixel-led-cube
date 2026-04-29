@@ -15,21 +15,11 @@
 
   <tr>
     <td width="45%">
-      <b>Cube Layer Assembly – Alternate View</b><br>
-      Additional angle demonstrating vertical alignment and wiring consistency across the 4×4 grid.
+      <b>Cube Build Test – Lit View</b><br>
+      Lighting test during the build process to verify LED continuity and data flow.
     </td>
     <td>
-      <img src="cube-build-layer-top-view-2.jpeg" width="100%">
-    </td>
-  </tr>
-
-  <tr>
-    <td width="45%">
-      <b>Top View of Completed Layer</b><br>
-      A completed LED layer before stacking, ensuring continuity and correct data flow direction.
-    </td>
-    <td>
-      <img src="cube-build-top-view-1.jpeg" width="100%">
+      <img src="cube-build-lit-view-1.jpeg" width="100%">
     </td>
   </tr>
 

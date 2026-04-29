@@ -4,7 +4,7 @@ This directory contains the Arduino sketch that controls the 4×4×4 NeoPixel LE
 
 ## File Contents
 
-- `neopixel-cube.ino` – Main Arduino sketch
+- `neopixel_cube.ino` – Main Arduino sketch
 
 ## Pin Configuration
 
