@@ -4,7 +4,7 @@ This directory contains the Arduino sketch that controls the 4×4×4 NeoPixel LE
 
 ## File Contents
 
-- `neopixel_cube.ino` – Main Arduino sketch
+- `neopixel_cube.ino` - Main Arduino sketch
 
 ## Pin Configuration
 
@@ -16,49 +16,49 @@ The following pin assignments are used in the code:
 | D3 | Mode Button | Digital Input | Animation pattern selector |
 | D4 | Buzzer | Digital Output | Audio feedback |
 | D6 | NeoPixel Data | Digital Output | LED data signal |
-| A0 | LDR Sensor | Analog Input | Ambient light measurement |
+| A0 | LDR Sensor | Analogue Input | Ambient light measurement |
 
 ## Animation Patterns
 
-### Mode 0: Color Wipe
+### Mode 0: Colour Wipe
 
-Sequentially lights each LED in red, green and blue order. The pattern uses a static state variable to track the current color phase and LED index. A 50ms interval between LEDs creates a smooth wave effect across the cube.
+Sequentially lights each LED in red, green and blue order. The pattern uses a static state variable to track the current colour phase and LED index. A 50ms interval between LEDs creates a smooth wave effect across the cube.
 
 **Key Features:**
 - Non-blocking timing using `millis()`
-- Automatic color cycling (red → green → blue → red)
-- Complete LED clear between color transitions
+- Automatic colour cycling (red -> green -> blue -> red)
+- Complete LED clear between colour transitions
 
 ### Mode 1: Smooth RGB Fade
 
 All LEDs fade in and out synchronously through the RGB spectrum. The algorithm incrementally adjusts brightness from 0 to 255, then reverses direction. A 3ms delay between steps ensures smooth visual transitions.
 
 **Key Features:**
-- Synchronized fade across all LEDs
+- Synchronous fade across all LEDs
 - Smooth brightness ramping
-- Continuous color cycling
+- Continuous colour cycling
 
 ### Mode 2: Fire Effect
 
-Simulates realistic flickering flames using a heat simulation algorithm. Each LED maintains a heat value that determines its color mapping. The pattern includes three key stages:
+Simulates realistic flickering flames using a heat simulation algorithm. Each LED maintains a heat value that determines its colour mapping. The pattern includes three key stages:
 
-1. **Cooling** – Random heat reduction per LED
-2. **Heat Diffusion** – Upward heat propagation between adjacent LEDs
-3. **Sparking** – Random ignition events at the base
+1. **Cooling** - Random heat reduction per LED
+2. **Heat Diffusion** - Upward heat propagation between adjacent LEDs
+3. **Sparking** - Random ignition events at the base
 
 **Parameters:**
-- `Cooling: 55` – Rate of heat loss
-- `Sparking: 120` – Frequency of new spark generation
-- `SpeedDelay: 15` – Animation update interval
+- `Cooling: 55` - Rate of heat loss
+- `Sparking: 120` - Frequency of new spark generation
+- `SpeedDelay: 15` - Animation update interval
 
-**Color Mapping:**
-- Low heat → Dark red
-- Medium heat → Orange/yellow
-- High heat → Bright yellow/white
+**Colour Mapping:**
+- Low heat -> Dark red
+- Medium heat -> Orange/yellow
+- High heat -> Bright yellow/white
 
 ### Mode 3: Rainbow Cycle
 
-Displays a continuously moving rainbow gradient across the LED array. The color wheel function maps positions 0-255 to smooth RGB transitions:
+Displays a continuously moving rainbow gradient across the LED array. The colour wheel function maps positions 0-255 to smooth RGB transitions:
 
 - 0-84: Red to green
 - 85-169: Green to blue
@@ -75,7 +75,7 @@ Displays a continuously moving rainbow gradient across the LED array. The color 
 
 Executes once at power-on:
 
-1. Initializes NeoPixel library with 64 LEDs on pin D6
+1. Initialises NeoPixel library with 64 LEDs on pin D6
 2. Configures pin modes for buttons, buzzer and sensor
 3. Establishes serial communication at 9600 baud
 4. Outputs "Setup complete. Ready." confirmation message
@@ -95,12 +95,12 @@ Main execution cycle that runs continuously:
 
 The adaptive brightness algorithm uses the following logic:
 ```
-Analog Reading (0-1023) → Mapped Value (255-20) → Constrained (20-255)
+Analogue Reading (0-1023) -> Mapped Value (255-20) -> Constrained (20-255)
 ```
 
 **Mapping Details:**
-- Lower ambient light (lower LDR value) → Higher LED brightness
-- Higher ambient light (higher LDR value) → Lower LED brightness
+- Lower ambient light (lower LDR value) -> Higher LED brightness
+- Higher ambient light (higher LDR value) -> Lower LED brightness
 - Minimum brightness: 20 (ensures visibility in bright environments)
 - Maximum brightness: 255 (full intensity in dark environments)
 
@@ -110,19 +110,19 @@ The inverted mapping prevents excessive brightness in well-lit environments, red
 
 ### showStrip()
 
-Updates the physical LED display with current color values. Includes preprocessor directives for compatibility with both Adafruit NeoPixel and FastLED libraries.
+Updates the physical LED display with current colour values. Includes preprocessor directives for compatibility with both Adafruit NeoPixel and FastLED libraries.
 
 ### setPixel(int Pixel, byte red, byte green, byte blue)
 
-Sets the color of a specific LED by index. Accepts RGB values in the range 0-255.
+Sets the colour of a specific LED by index. Accepts RGB values in the range 0-255.
 
 ### setAll(byte red, byte green, byte blue)
 
-Sets all 64 LEDs to the same color. Internally calls `setPixel()` for each LED, then updates the display.
+Sets all 64 LEDs to the same colour. Internally calls `setPixel()` for each LED, then updates the display.
 
-### setPixelHeatColor(int Pixel, byte temperature)
+### setPixelHeatColour(int Pixel, byte temperature)
 
-Converts a heat value (0-255) to an appropriate flame color. Uses temperature zones to determine RGB values:
+Converts a heat value (0-255) to an appropriate flame colour. Uses temperature zones to determine RGB values:
 
 - Cool (0-63): Dark to bright red
 - Medium (64-127): Red to orange/yellow
@@ -130,7 +130,7 @@ Converts a heat value (0-255) to an appropriate flame color. Uses temperature zo
 
 ### Wheel(byte WheelPos)
 
-Maps a position value (0-255) to a color on the RGB spectrum. Returns a pointer to a static 3-byte array containing RGB values. Used by the rainbow cycle animation.
+Maps a position value (0-255) to a colour on the RGB spectrum. Returns a pointer to a static 3-byte array containing RGB values. Used by the rainbow cycle animation.
 
 ## Required Libraries
 
@@ -138,31 +138,31 @@ Maps a position value (0-255) to a color on the RGB spectrum. Returns a pointer 
 
 **Installation:**
 1. Open Arduino IDE
-2. Navigate to Sketch → Include Library → Manage Libraries
+2. Navigate to Sketch -> Include Library -> Manage Libraries
 3. Search for "Adafruit NeoPixel"
 4. Install the latest version
 
 **Library Configuration:**
 
-The library is initialized with the following parameters:
+The library is initialised with the following parameters:
 ```cpp
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, PIN, NEO_GRB + NEO_KHZ800);
 ```
 
-- `NUM_LEDS: 64` – Total LED count in 4×4×4 cube
-- `PIN: 6` – Data output pin
-- `NEO_GRB` – Color order (Green-Red-Blue for WS2812B)
-- `NEO_KHZ800` – Communication frequency (800kHz standard)
+- `NUM_LEDS: 64` - Total LED count in 4×4×4 cube
+- `PIN: 6` - Data output pin
+- `NEO_GRB` - Colour order (Green-Red-Blue for WS2812B)
+- `NEO_KHZ800` - Communication frequency (800kHz standard)
 
 ## State Variables
 
 The code uses several state-tracking variables:
 
-- `isOn` – Boolean flag for system power state
-- `currentMode` – Integer (0-3) for active animation pattern
-- `lastPowerButtonState` – Previous power button state for edge detection
-- `lastModeButtonState` – Previous mode button state for edge detection
-- `modeChanged` – Boolean flag to control serial output of pattern names
+- `isOn` - Boolean flag for system power state
+- `currentMode` - Integer (0-3) for active animation pattern
+- `lastPowerButtonState` - Previous power button state for edge detection
+- `lastModeButtonState` - Previous mode button state for edge detection
+- `modeChanged` - Boolean flag to control serial output of pattern names
 
 Additional static variables within pattern functions preserve animation state between loop iterations.
 
@@ -171,7 +171,7 @@ Additional static variables within pattern functions preserve animation state be
 Debug information is continuously transmitted via serial at 9600 baud:
 ```
 Setup complete. Ready.
-System ON - Pattern: Color Wipe
+System ON - Pattern: Colour Wipe
 LDR: 512 | Brightness: 137
 LDR: 498 | Brightness: 144
 Pattern: Smooth RGB Fade
@@ -179,11 +179,11 @@ Pattern: Smooth RGB Fade
 
 ## Memory Usage
 
-The code is optimized for Arduino Uno's limited resources:
+The code is optimised for Arduino Uno's limited resources:
 
 - Program storage: ~10KB (32% of available flash)
 - Dynamic memory: ~800 bytes (40% of available SRAM)
-- Static variables used to minimize heap fragmentation
+- Static variables used to minimise heap fragmentation
 
 ## Modification Guide
 

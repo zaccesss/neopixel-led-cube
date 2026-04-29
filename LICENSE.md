@@ -6,8 +6,8 @@ Copyright (c) 2024 Isaac "Zac" Adjei, NeoPixel Innovators
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
+to use, copy, modify, merge, publish, distribute, sublicense and/or sell
+copies of the Software and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
@@ -29,7 +29,7 @@ This project was developed as part of an academic engineering assignment at an e
 
 ### Attribution Requirements
 
-If you use this project or any portion of its code, design, or documentation in an academic context, you must:
+If you use this project or any portion of its code, design or documentation in an academic context, you must:
 
 1. Provide clear attribution to the original authors
 2. Include a reference to this repository
