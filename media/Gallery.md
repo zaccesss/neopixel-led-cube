@@ -5,7 +5,7 @@
 <table>
   <tr>
     <td width="45%">
-      <b>Cube Layer Assembly – Top View</b><br>
+      <b>Cube Layer Assembly - Top View</b><br>
       Early stage of the cube build showing precise LED spacing and alignment during layer soldering
     </td>
     <td>
@@ -15,7 +15,7 @@
 
   <tr>
     <td width="45%">
-      <b>Cube Build Test – Lit View</b><br>
+      <b>Cube Build Test - Lit View</b><br>
       Lighting test during the build process to verify LED continuity and data flow.
     </td>
     <td>
@@ -25,7 +25,7 @@
 
   <tr>
     <td width="45%">
-      <b>Cube Frame – Angle View</b><br>
+      <b>Cube Frame - Angle View</b><br>
       Shows structural integrity and layering technique before final full assembly.
     </td>
     <td>
@@ -35,7 +35,7 @@
 
   <tr>
     <td width="45%">
-      <b>Cube Test – Full Bright RGB Front View</b><br>
+      <b>Cube Test - Full Bright RGB Front View</b><br>
       Testing all LEDs at full output to confirm solder joints, power stability and data propagation.
     </td>
     <td>
@@ -45,7 +45,7 @@
 
   <tr>
     <td width="45%">
-      <b>Cube Test – Alternate Front View</b><br>
+      <b>Cube Test - Alternate Front View</b><br>
       Additional brightness and alignment verification from a different perspective.
     </td>
     <td>
@@ -55,7 +55,7 @@
 
   <tr>
     <td width="45%">
-      <b>Internal Wiring – Arduino + Breadboard</b><br>
+      <b>Internal Wiring - Arduino + Breadboard</b><br>
       The internal control section showing connections between Arduino, LDR, buttons and buzzer.
     </td>
     <td>
@@ -65,7 +65,7 @@
 
   <tr>
     <td width="45%">
-      <b>Internal Wiring – Secondary Angle</b><br>
+      <b>Internal Wiring - Secondary Angle</b><br>
       Highlights cable routing and power distribution inside the enclosure.
     </td>
     <td>
@@ -75,7 +75,7 @@
 
   <tr>
     <td width="45%">
-      <b>Final Assembly – Complete Cube Setup</b><br>
+      <b>Final Assembly - Complete Cube Setup</b><br>
       The finished NeoPixel cube mounted in the enclosure ready for demonstration.
     </td>
     <td>
