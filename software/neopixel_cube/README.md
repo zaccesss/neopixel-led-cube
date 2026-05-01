@@ -2,6 +2,8 @@
 
 This directory contains the Arduino sketch that controls the 4×4×4 NeoPixel LED Cube. The firmware implements button-based user interaction, sensor-driven brightness control and four distinct animation patterns.
 
+For full project documentation, see [../../README.md](../../README.md).
+
 ## File Contents
 
 - `neopixel_cube.ino` - Main Arduino sketch
@@ -10,13 +12,13 @@ This directory contains the Arduino sketch that controls the 4×4×4 NeoPixel LE
 
 The following pin assignments are used in the code:
 
-| Pin | Component | Type | Description |
-|-----|-----------|------|-------------|
-| D2 | Power Button | Digital Input | System on/off toggle |
-| D3 | Mode Button | Digital Input | Animation pattern selector |
-| D4 | Buzzer | Digital Output | Audio feedback |
-| D6 | NeoPixel Data | Digital Output | LED data signal |
-| A0 | LDR Sensor | Analogue Input | Ambient light measurement |
+| Pin | Component     | Type           | Description                |
+| --- | ------------- | -------------- | -------------------------- |
+| D2  | Power Button  | Digital Input  | System on/off toggle       |
+| D3  | Mode Button   | Digital Input  | Animation pattern selector |
+| D4  | Buzzer        | Digital Output | Audio feedback             |
+| D6  | NeoPixel Data | Digital Output | LED data signal            |
+| A0  | LDR Sensor    | Analogue Input | Ambient light measurement  |
 
 ## Animation Patterns
 
@@ -25,6 +27,7 @@ The following pin assignments are used in the code:
 Sequentially lights each LED in red, green and blue order. The pattern uses a static state variable to track the current colour phase and LED index. A 50ms interval between LEDs creates a smooth wave effect across the cube.
 
 **Key Features:**
+
 - Non-blocking timing using `millis()`
 - Automatic colour cycling (red -> green -> blue -> red)
 - Complete LED clear between colour transitions
@@ -34,6 +37,7 @@ Sequentially lights each LED in red, green and blue order. The pattern uses a st
 All LEDs fade in and out synchronously through the RGB spectrum. The algorithm incrementally adjusts brightness from 0 to 255, then reverses direction. A 3ms delay between steps ensures smooth visual transitions.
 
 **Key Features:**
+
 - Synchronous fade across all LEDs
 - Smooth brightness ramping
 - Continuous colour cycling
@@ -47,11 +51,13 @@ Simulates realistic flickering flames using a heat simulation algorithm. Each LE
 3. **Sparking** - Random ignition events at the base
 
 **Parameters:**
+
 - `Cooling: 55` - Rate of heat loss
 - `Sparking: 120` - Frequency of new spark generation
 - `SpeedDelay: 15` - Animation update interval
 
 **Colour Mapping:**
+
 - Low heat -> Dark red
 - Medium heat -> Orange/yellow
 - High heat -> Bright yellow/white
@@ -65,6 +71,7 @@ Displays a continuously moving rainbow gradient across the LED array. The colour
 - 170-255: Blue to red
 
 **Key Features:**
+
 - Smooth hue transitions
 - Continuous animation flow
 - Configurable speed (20ms default delay)
@@ -94,11 +101,13 @@ Main execution cycle that runs continuously:
 ## Brightness Control System
 
 The adaptive brightness algorithm uses the following logic:
+
 ```
 Analogue Reading (0-1023) -> Mapped Value (255-20) -> Constrained (20-255)
 ```
 
 **Mapping Details:**
+
 - Lower ambient light (lower LDR value) -> Higher LED brightness
 - Higher ambient light (higher LDR value) -> Lower LED brightness
 - Minimum brightness: 20 (ensures visibility in bright environments)
@@ -137,6 +146,7 @@ Maps a position value (0-255) to a colour on the RGB spectrum. Returns a pointer
 ### Adafruit NeoPixel
 
 **Installation:**
+
 1. Open Arduino IDE
 2. Navigate to Sketch -> Include Library -> Manage Libraries
 3. Search for "Adafruit NeoPixel"
@@ -145,6 +155,7 @@ Maps a position value (0-255) to a colour on the RGB spectrum. Returns a pointer
 **Library Configuration:**
 
 The library is initialised with the following parameters:
+
 ```cpp
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, PIN, NEO_GRB + NEO_KHZ800);
 ```
@@ -164,11 +175,16 @@ The code uses several state-tracking variables:
 - `lastModeButtonState` - Previous mode button state for edge detection
 - `modeChanged` - Boolean flag to control serial output of pattern names
 
+## Last Reviewed
+
+May 2026
+
 Additional static variables within pattern functions preserve animation state between loop iterations.
 
 ## Serial Output Format
 
 Debug information is continuously transmitted via serial at 9600 baud:
+
 ```
 Setup complete. Ready.
 System ON - Pattern: Colour Wipe
@@ -197,6 +213,7 @@ The code is optimised for Arduino Uno's limited resources:
 ### Adjusting Brightness Range
 
 Modify the `map()` function parameters:
+
 ```cpp
 int brightness = map(lightValue, 0, 1023, [MIN], [MAX]);
 ```

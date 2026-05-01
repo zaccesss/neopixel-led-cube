@@ -6,7 +6,7 @@
 https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
 </p>
 
-### 🔧 Build Process
+### Build Process
 
 <table>
   <tr>
