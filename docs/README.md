@@ -2,6 +2,8 @@
 
 This directory contains all project documentation including market analysis, financial reports, project management materials and technical portfolios. These documents provide context and supporting information for the NeoPixel LED Cube Project.
 
+For quick navigation to visuals and media, see [../media/Gallery.md](../media/Gallery.md).
+
 ## Document Overview
 
 ### market-analysis.docx
@@ -9,6 +11,7 @@ This directory contains all project documentation including market analysis, fin
 **Purpose:** Competitive market analysis of similar LED cube products
 
 **Contents:**
+
 - Comparison of competing commercial LED cube kits
 - Price points and feature sets
 - Analysis of available products on Amazon and AliExpress
@@ -22,6 +25,7 @@ The market analysis identified three primary competing products ranging from £2
 **Purpose:** Project budget tracking and financial documentation
 
 **Contents:**
+
 - Component costs and sourcing information
 - Budget allocation across hardware, materials and tools
 - Cost comparison with commercial alternatives
@@ -35,12 +39,14 @@ The spreadsheet provides detailed financial tracking for the project, demonstrat
 **Purpose:** Project timeline and task management
 
 **Contents:**
+
 - Project phases and milestones
 - Task dependencies and critical path
 - Resource allocation timeline
 - Progress tracking against planned schedule
 
 **Project Phases:**
+
 1. Planning and design (component selection, circuit design)
 2. Hardware assembly (cube construction, enclosure fabrication)
 3. Software development (pattern programming and sensor integration)
@@ -54,6 +60,7 @@ The spreadsheet provides detailed financial tracking for the project, demonstrat
 **Purpose:** Visual presentation of hardware design and assembly
 
 **Contents:**
+
 - Component specifications and rationale
 - Circuit diagrams and wiring schematics
 - Assembly process photography
@@ -67,6 +74,7 @@ This presentation serves as a technical overview for academic evaluation and pro
 **Purpose:** Early planning documents and development notes
 
 **Contents:**
+
 - Initial project requirements (essential and recommended features)
 - Hardware selection criteria
 - Early code snippets and algorithm concepts
@@ -80,6 +88,7 @@ This document preserves the project's evolution from initial concept to final im
 **Purpose:** Comprehensive code documentation and software architecture overview
 
 **Contents:**
+
 - Annotated code screenshots with detailed explanations
 - Function-by-function breakdown of software logic
 - Software flowchart illustrating program execution
@@ -87,6 +96,7 @@ This document preserves the project's evolution from initial concept to final im
 - Input handling and sensor integration details
 
 **Key Sections:**
+
 - Setup and configuration
 - Main loop structure
 - Lighting pattern implementations
@@ -102,6 +112,7 @@ The portfolio uses visual aids (screenshots and diagrams) combined with descript
 
 **Contents:**
 Similar to software-portfolio.docx with improvements to:
+
 - Visual layout and organisation
 - Code annotation clarity
 - Flowchart presentation
@@ -122,6 +133,7 @@ The following supporting media files are stored in `../media/` rather than this 
 
 **Content:**
 Visual representation of key code sections, particularly:
+
 - Header and initialization code
 - Main loop structure
 - Pattern function implementations
@@ -131,12 +143,14 @@ Visual representation of key code sections, particularly:
 **Purpose:** Video demonstration of all four animation patterns
 
 **Contents:**
+
 - Complete walkthrough of system functionality
 - All four patterns displayed in sequence
 - Brightness adjustment demonstration
 - User interaction with buttons
 
 **Technical Specifications:**
+
 - Format: MP4 (H.264)
 - Suitable for presentation and documentation
 - Shows cube from multiple angles
@@ -146,6 +160,7 @@ Visual representation of key code sections, particularly:
 **Purpose:** Technical explanation video
 
 **Contents:**
+
 - Project overview and objectives
 - Hardware component tour
 - Software architecture explanation
@@ -185,16 +200,16 @@ The planning documents (gantt-chart, finance-report) demonstrate:
 
 ## File Formats
 
-| Document Type | Format | Software Required |
-|---------------|--------|-------------------|
-| Market Analysis | .docx | Microsoft Word or compatible |
-| Finance Report | .xlsx | Microsoft Excel or compatible |
-| Gantt Chart | .xlsx | Microsoft Excel or compatible |
-| Hardware Overview | .pptx | Microsoft PowerPoint or compatible; stored in `hardware/` |
-| Notes and Drafts | .docx | Microsoft Word or compatible |
-| Software Portfolio | .docx | Microsoft Word or compatible |
-| Code Screenshots | .png | Image viewer; stored in `media/` |
-| Demo Videos | .mp4 | Video player; stored in `media/` |
+| Document Type      | Format | Software Required                                         |
+| ------------------ | ------ | --------------------------------------------------------- |
+| Market Analysis    | .docx  | Microsoft Word or compatible                              |
+| Finance Report     | .xlsx  | Microsoft Excel or compatible                             |
+| Gantt Chart        | .xlsx  | Microsoft Excel or compatible                             |
+| Hardware Overview  | .pptx  | Microsoft PowerPoint or compatible; stored in `hardware/` |
+| Notes and Drafts   | .docx  | Microsoft Word or compatible                              |
+| Software Portfolio | .docx  | Microsoft Word or compatible                              |
+| Code Screenshots   | .png   | Image viewer; stored in `media/`                          |
+| Demo Videos        | .mp4   | Video player; stored in `media/`                          |
 
 ## Document Revision History
 
@@ -212,3 +227,7 @@ For complete project information, refer to:
 ## Contact
 
 Questions about documentation content or requests for clarification should be directed through the project repository's issue tracking system or via the contact information provided in the root README.
+
+## Last Reviewed
+
+May 2026
