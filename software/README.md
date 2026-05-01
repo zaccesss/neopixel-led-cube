@@ -2,11 +2,14 @@
 
 This directory contains all software and firmware used in the NeoPixel LED Cube Project. The code is written in C/C++ for the Arduino platform and implements real-time control of 64 addressable RGB LEDs with interactive user input and sensor-based brightness adjustment.
 
+For implementation details in the sketch, open [neopixel_cube/neopixel_cube.ino](neopixel_cube/neopixel_cube.ino).
+
 ## Overview
 
 The software architecture is designed around a state machine model that continuously monitors user inputs, processes sensor data and renders dynamic lighting patterns. The implementation prioritizes modularity, readability and real-time responsiveness.
 
 ## Directory Structure
+
 ```
 software/
 ├── README.md (this file)
@@ -87,6 +90,7 @@ The software requires the following library:
 - **Adafruit NeoPixel** - Official library for controlling WS2812B addressable LEDs
 
 Install via Arduino Library Manager:
+
 ```
 Sketch -> Include Library -> Manage Libraries -> Search "Adafruit NeoPixel"
 ```
@@ -145,18 +149,25 @@ Change the buzzer pin or adjust the duration in the `beep()` function.
 ## Troubleshooting
 
 **LEDs not responding:**
+
 - Verify power supply voltage and current capacity
 - Check data line connection to pin D6
 - Ensure shared ground between Arduino and LED power supply
 
 **Buttons not working:**
+
 - Confirm pull-up resistor configuration
 - Check physical button connections
 - Adjust debounce delay if needed
 
 **Brightness not changing:**
+
 - Verify LDR connection to A0
 - Test LDR functionality with Serial Monitor output
 - Check mapping range in code
 
 For additional details on specific functions and implementation, refer to the inline comments in `neopixel_cube.ino`.
+
+## Last Reviewed
+
+May 2026
