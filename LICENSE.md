@@ -1,4 +1,5 @@
 # LICENSE
+
 ### MIT License
 
 Copyright (c) 2024 Isaac "Zac" Adjei, NeoPixel Innovators
@@ -37,10 +38,11 @@ If you use this project or any portion of its code, design or documentation in a
 4. Not claim this work as your own original creation
 
 ### Recommended Citation Format
+
 ```
-Adjei, I. "Z." (2024). NeoPixel LED Cube Project: Adaptive LED Cube System 
-with Sensor Driven Brightness and Multi Pattern Rendering. 
-NeoPixel Innovators 
+Adjei, I. "Z." (2024). NeoPixel LED Cube Project: Adaptive LED Cube System
+with Sensor Driven Brightness and Multi Pattern Rendering.
+NeoPixel Innovators
 ```
 
 ### Educational Use
@@ -62,4 +64,6 @@ While the MIT License permits commercial use, users should be aware that some ha
 
 **Project Team:** NeoPixel Innovators
 **Lead Developer:** Isaac "Zac" Adjei  
-**Project Year:** 2025
+**Project Year:** 2026
+
+**Last Reviewed:** May 2026

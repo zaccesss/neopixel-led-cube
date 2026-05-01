@@ -1,8 +1,5 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=header&text=NeoPixel%20LED%20Cube%20Project&fontSize=34&fontAlignY=32&fontColor=ffffff&animation=fadeIn" />
-</p>
-
 # Project Contact & Links
+
 <p align="center">
   <a href="https://linktr.ee/zaccess">
     <img src="https://img.shields.io/badge/Linktree-zaccess-1de9b6?style=for-the-badge&logo=linktree&logoColor=white">
@@ -13,6 +10,9 @@
   <a href="mailto:offices.isaac@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact-ff6f61?style=for-the-badge&logo=gmail&logoColor=white">
   </a>
+  <a href="https://isaacadjei.me">
+    <img src="https://img.shields.io/badge/Portfolio-isaacadjei.me-111111?style=for-the-badge&logo=firefox&logoColor=white">
+  </a>
   
 </p>
 <p align="center">
@@ -21,10 +21,12 @@
 
 ## Project Walkthrough
 
+<p align="center">
 https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
-
+</p>
 
 # Quick Navigation
+
 <p align="center">
   🔎 •  
   <a href="#1-project-overview">Overview</a> •
@@ -37,10 +39,10 @@ https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
   <a href="#8-serial-monitor-output">Serial output</a> •
   <a href="#9-demonstration-media">Media</a> •
   <a href="#10-future-enhancements">Future</a> •
-  <a href="#11-license-credits-and-attribution">License and credits</a> •
+  <a href="#11-license-and-supporting-links">License and links</a> •
   <a href="#12-repository-structure">Repo structure</a> •
   <a href="#contact-and-support">Contact</a> •
-  <a href="#faq">FAQ</a>
+  <a href="FAQ.md">FAQ</a>
 </p>
 
 ---
@@ -52,7 +54,7 @@ The NeoPixel LED Cube Project is an interactive 4×4×4 LED display system devel
 The project demonstrates practical applications of digital input handling, analogue sensing, PWM-based LED control and real-time logic in embedded systems. The cube features user-controlled pattern selection, automatic brightness adjustment via an LDR sensor and audio feedback through a buzzer, providing an engaging and responsive visual experience.
 
 **Lead Developer:** Isaac "Zac" Adjei  
-**Team:** NeoPixel Innovators   
+**Team:** NeoPixel Innovators  
 **Platform:** Arduino Uno  
 **LED Count:** 64 WS2812B addressable LEDs
 
@@ -74,30 +76,30 @@ The project demonstrates practical applications of digital input handling, analo
 
 ### 3.1 Component List
 
-| Component | Specification | Quantity | Purpose |
-|-----------|---------------|----------|---------|
-| Arduino Uno | ATmega328P | 1 | Main microcontroller |
-| WS2812B LEDs | 5V addressable RGB | 64 | LED cube matrix |
-| Power Button | Digital momentary switch | 1 | System power toggle |
-| Mode Button | Digital momentary switch | 1 | Pattern selection |
-| LDR Sensor | Analogue light sensor | 1 | Ambient brightness detection |
-| Buzzer | 5V active buzzer | 1 | Audio feedback |
-| Electrolytic Capacitor | 1000µF, 6.3V+ | 1 | Power supply smoothing |
-| Breadboard | Standard size | 1 | Component mounting |
-| Power Supply | 5V, ≥2A | 1 | System power |
-| Enclosure | Custom wooden box | 1 | Housing and protection |
+| Component              | Specification            | Quantity | Purpose                      |
+| ---------------------- | ------------------------ | -------- | ---------------------------- |
+| Arduino Uno            | ATmega328P               | 1        | Main microcontroller         |
+| WS2812B LEDs           | 5V addressable RGB       | 64       | LED cube matrix              |
+| Power Button           | Digital momentary switch | 1        | System power toggle          |
+| Mode Button            | Digital momentary switch | 1        | Pattern selection            |
+| LDR Sensor             | Analogue light sensor    | 1        | Ambient brightness detection |
+| Buzzer                 | 5V active buzzer         | 1        | Audio feedback               |
+| Electrolytic Capacitor | 1000µF, 6.3V+            | 1        | Power supply smoothing       |
+| Breadboard             | Standard size            | 1        | Component mounting           |
+| Power Supply           | 5V, ≥2A                  | 1        | System power                 |
+| Enclosure              | Custom wooden box        | 1        | Housing and protection       |
 
 ### 3.2 Pin Configuration
 
-| Arduino Pin | Component | Function |
-|-------------|-----------|----------|
-| D2 | Power Button | Digital input (pull-up) |
-| D3 | Mode Button | Digital input (pull-up) |
-| D4 | Buzzer | Digital output |
-| D6 | NeoPixel Data | Data output to LED strip |
-| A0 | LDR Sensor | Analogue input (0-1023) |
-| 5V | Power Rail | Positive supply (+) |
-| GND | Ground | Common ground (-) |
+| Arduino Pin | Component     | Function                 |
+| ----------- | ------------- | ------------------------ |
+| D2          | Power Button  | Digital input (pull-up)  |
+| D3          | Mode Button   | Digital input (pull-up)  |
+| D4          | Buzzer        | Digital output           |
+| D6          | NeoPixel Data | Data output to LED strip |
+| A0          | LDR Sensor    | Analogue input (0-1023)  |
+| 5V          | Power Rail    | Positive supply (+)      |
+| GND         | Ground        | Common ground (-)        |
 
 ### 3.3 Circuit Design
 
@@ -118,6 +120,7 @@ The circuit design incorporates several key safety and performance features:
 The software is organised around a state machine architecture with real-time input processing and pattern rendering:
 
 **Main Components:**
+
 - **Setup Function** - Initialises hardware peripherals, configures pin modes and establishes serial communication
 - **Loop Function** - Continuously polls button states, reads sensor data and executes the active animation pattern
 - **Pattern Functions** - Four independent animation routines with non-blocking timing control
@@ -126,15 +129,19 @@ The software is organised around a state machine architecture with real-time inp
 ### 4.2 Animation Patterns
 
 #### Mode 0: Colour Wipe
+
 Sequentially illuminates each LED in a cascading pattern, cycling through red, green and blue. This pattern creates a smooth wave effect across the cube structure.
 
 #### Mode 1: Smooth RGB Fade
+
 All LEDs fade in and out synchronously, transitioning between red, green and blue. The fade effect uses incremental brightness adjustment for smooth colour transitions.
 
 #### Mode 2: Fire Effect
+
 Simulates realistic flickering flames using a heat simulation algorithm. Each LED is assigned a dynamic heat value that determines its colour, ranging from deep red through orange to bright yellow-white.
 
 #### Mode 3: Rainbow Cycle
+
 Displays a moving rainbow gradient across the entire LED array. The colour wheel algorithm ensures smooth hue transitions and continuous animation flow.
 
 ### 4.3 Brightness Control System
@@ -160,6 +167,7 @@ The adaptive brightness system maps the LDR sensor reading to LED intensity:
 The LED cube uses a custom copper wire frame structure that provides both mechanical support and electrical connections. The 4×4×4 matrix is built layer by layer, with each layer soldered into place before proceeding to the next.
 
 **Construction Process:**
+
 1. Created a jig to ensure precise LED spacing and alignment
 2. Bent and cut copper wire segments to form the structural framework
 3. Soldered LEDs in series, maintaining proper data line polarity
@@ -195,19 +203,19 @@ Brightness adjusts automatically based on ambient light detected by the LDR sens
 
 ## 7. Technical Specifications
 
-| Parameter | Value |
-|-----------|-------|
-| LED Type | WS2812B (addressable RGB) |
-| Total LED Count | 64 |
-| Matrix Configuration | 4×4×4 cube |
-| Operating Voltage | 5V DC |
-| Maximum Current Draw | ~3.8A (all LEDs at full white) |
-| Recommended Power Supply | 5V, ≥2A |
-| Microcontroller | Arduino Uno (ATmega328P) |
-| Clock Speed | 16 MHz |
-| Serial Baud Rate | 9600 bps |
-| LDR Analogue Resolution | 10-bit (0-1023) |
-| LED Brightness Resolution | 8-bit (0-255) |
+| Parameter                 | Value                          |
+| ------------------------- | ------------------------------ |
+| LED Type                  | WS2812B (addressable RGB)      |
+| Total LED Count           | 64                             |
+| Matrix Configuration      | 4×4×4 cube                     |
+| Operating Voltage         | 5V DC                          |
+| Maximum Current Draw      | ~3.8A (all LEDs at full white) |
+| Recommended Power Supply  | 5V, ≥2A                        |
+| Microcontroller           | Arduino Uno (ATmega328P)       |
+| Clock Speed               | 16 MHz                         |
+| Serial Baud Rate          | 9600 bps                       |
+| LDR Analogue Resolution   | 10-bit (0-1023)                |
+| LED Brightness Resolution | 8-bit (0-255)                  |
 
 ---
 
@@ -221,6 +229,7 @@ The Arduino continuously transmits diagnostic information via serial communicati
 - Calculated brightness values
 
 **Example Output:**
+
 ```
 Setup complete. Ready.
 System ON - Pattern: Colour Wipe
@@ -249,6 +258,10 @@ The project includes comprehensive visual documentation:
 - **neopixel-demo.mp4** - Full demonstration of all four animation patterns
 - **neopixel-description.mp4** - Project walkthrough and technical explanation
 
+For build photos and image walkthroughs, open [media/Gallery.md](media/Gallery.md).
+
+For Arduino source code, open [software/neopixel_cube/neopixel_cube.ino](software/neopixel_cube/neopixel_cube.ino).
+
 ---
 
 ## 10. Future Enhancements
@@ -264,36 +277,18 @@ Potential improvements and expansions for future development:
 
 ---
 
-## 11. License, Credits and Attribution
+## 11. License and Supporting Links
 
-### 11.1 License
-
-This project is released under the MIT License with an additional academic use notice.
-
-**MIT License**
-
-Copyright (c) 2024 Isaac "Zac" Adjei, NeoPixel Innovators 
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense and/or sell copies of the Software and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-**Academic Use Notice**
-
-This project was developed as part of an academic engineering assignment. While the code and design are open source, users incorporating this work into their own academic projects should provide appropriate attribution and ensure compliance with their institution's academic integrity policies.
-
-### 11.2 Attribution
+- License text: [LICENSE.md](LICENSE.md)
+- Expanded FAQ: [FAQ.md](FAQ.md)
+- Full image gallery: [media/Gallery.md](media/Gallery.md)
+- Software overview: [software/README.md](software/README.md)
+- Arduino sketch: [software/neopixel_cube/neopixel_cube.ino](software/neopixel_cube/neopixel_cube.ino)
 
 **Lead Developer:** Isaac "Zac" Adjei  
-**Team:** NeoPixel Innovators 
+**Team:** NeoPixel Innovators  
 **Project Repository:** https://github.com/zaccesss/neopixel-led-cube  
 **Dependencies:** Adafruit NeoPixel Library
-
-### 11.3 Credits
-
-This project was designed and developed by **Isaac “Zac” Adjei** & **Neopixel Innovators** 
 
 ---
 
@@ -301,11 +296,10 @@ This project was designed and developed by **Isaac “Zac” Adjei** & **Neopixe
 
 The project is organised into separate folders for software, hardware, documentation and media so it is easy to navigate and reuse parts of the work.
 
--  **docs/** - [Documentation folder](docs/) - reports, portfolios, planning files and final presentation  
-- **hardware/** - [Hardware resources](hardware/) - hardware overview slides and build notes  
-- **media/** - [Images and videos](media/) - photos and videos used in reports and the README  
+- **docs/** - [Documentation folder](docs/) - reports, portfolios, planning files and final presentation
+- **hardware/** - [Hardware resources](hardware/) - hardware overview slides and build notes
+- **media/** - [Images and videos](media/) - photos and videos used in reports and the README
 - **software/** - [Arduino code and software docs](software/) - Arduino firmware and supporting documentation
-
 
 <details>
 <summary><b>Click to expand full directory tree</b></summary>
@@ -362,26 +356,11 @@ neopixel-led-cube/
 
 ## Contact and Support
 
-For questions, suggestions or collaboration opportunities related to this project, please open an issue in the repository or contact the development team through the provided channels.
+For questions, suggestions or collaboration opportunities related to this project, I recommend opening an issue in this repository first.
 
-You can reach Zac at: **contact@zacess.com** or via my **GitHub profile**.
+You can also contact me directly at **contact@zacess.com**.
 
 **Project Status:** Completed  
-**Last Updated:** April 2026
+**Last Updated:** May 2026
 
 ---
-
-## FAQ
-
-### Can I use this project for my coursework?
-Yes, but attribution is required under the License & Academic Use Notice.
-
-### Can I add more LED patterns?
-Absolutely. The software is modular - add another case to the mode switch.
-
-### Can I adapt this for a 5×5×5 cube?
-Yes. Update NUM_LEDS and adjust wiring accordingly.
-
----
-
-
