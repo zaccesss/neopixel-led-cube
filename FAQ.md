@@ -14,7 +14,7 @@ I list the full component breakdown in [hardware/README.md](hardware/README.md).
 
 ## What power supply should I use?
 
-Use a stable 5V supply with enough current headroom. The documentation recommends at least 2A for this setup, and higher current capacity is safer when driving many LEDs at high brightness.
+Use a stable 5V supply with enough current headroom. The documentation recommends at least 2A for this setup and higher current capacity is safer when driving many LEDs at high brightness.
 
 ## Where can I see the build photos and demo media?
 
