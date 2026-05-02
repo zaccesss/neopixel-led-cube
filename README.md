@@ -16,6 +16,27 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
 </p>
 
+**Docs Hub:** [FAQ](FAQ.md) | [Hardware](hardware/README.md) | [Software](software/README.md) | [Gallery](media/Gallery.md)
+
+## Quick Setup
+
+1. Build the wiring shown in [hardware/README.md](hardware/README.md).
+2. Install Adafruit NeoPixel in Arduino IDE via Library Manager.
+3. Open [software/neopixel_cube/neopixel_cube.ino](software/neopixel_cube/neopixel_cube.ino).
+4. Select board Arduino Uno and choose the correct COM port.
+5. Upload the sketch and open Serial Monitor at 9600 baud.
+
+## Tested Environment
+
+| Item                    | Tested Value             |
+| ----------------------- | ------------------------ |
+| Arduino IDE             | 2.x                      |
+| Board                   | Arduino Uno (ATmega328P) |
+| LED Type                | WS2812B                  |
+| LED Count               | 64                       |
+| Supply Used During Demo | 5V DC, 2A+               |
+| Serial Baud             | 9600                     |
+
 ## Project Walkthrough
 
 https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
@@ -69,8 +90,8 @@ The project demonstrates practical applications of digital input handling, analo
 ### 2.1 Tech Stack
 
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" width="65" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="65" /> | <img src="https://techstack-generator.vercel.app/cpp-icon.svg" width="65" /> | <img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="65" /> | <img src="https://techstack-generator.vercel.app/github-icon.svg" width="65" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="65" /> |
-| :----------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
-|                                                   **Arduino**                                                   |                                                    **C**                                                     |                                   **C++**                                    |                                   **Python**                                    |                                                    **Git**                                                     |                                   **GitHub**                                    |                                                     **VS Code**                                                     |
+| :------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
+|                                               **Arduino**                                                |                                            **C**                                             |                                   **C++**                                    |                                   **Python**                                    |                                             **Git**                                              |                                   **GitHub**                                    |                                              **VS Code**                                               |
 
 ---
 
