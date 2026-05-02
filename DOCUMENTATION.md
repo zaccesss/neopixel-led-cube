@@ -1,4 +1,4 @@
-# Technical Reference — NeoPixel LED Cube
+# Documentation — NeoPixel LED Cube
 
 Full technical documentation for the NeoPixel LED Cube project. Covers hardware architecture, software design, build validation, troubleshooting and future development notes.
 
