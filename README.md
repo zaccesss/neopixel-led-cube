@@ -1,17 +1,14 @@
 # Project Contact & Links
 
 <p align="center">
-  <a href="https://linktr.ee/zaccess">
-    <img src="https://img.shields.io/badge/Linktree-zaccess-1de9b6?style=for-the-badge&logo=linktree&logoColor=white">
+  <a href="https://isaacadjei.me">
+    <img src="https://img.shields.io/badge/Website-isaacadjei.me-111111?style=for-the-badge&logo=firefox&logoColor=white">
   </a>
   <a href="https://www.linkedin.com/in/isaacadjei">
     <img src="https://img.shields.io/badge/LinkedIn-Isaac_Adjei-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>
   <a href="mailto:offices.isaac@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact-ff6f61?style=for-the-badge&logo=gmail&logoColor=white">
-  </a>
-  <a href="https://isaacadjei.me">
-    <img src="https://img.shields.io/badge/Portfolio-isaacadjei.me-111111?style=for-the-badge&logo=firefox&logoColor=white">
   </a>
   
 </p>
@@ -360,7 +357,13 @@ For questions, suggestions or collaboration opportunities related to this projec
 
 You can also contact me directly at **contact@zacess.com**.
 
-**Project Status:** Completed  
-**Last Updated:** May 2026
+<p align="center">
+  <b>Project Status:</b> Completed<br>
+  <b>Last Updated:</b> May 2026
+</p>
 
 ---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" />
+</p>
