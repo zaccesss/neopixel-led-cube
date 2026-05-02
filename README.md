@@ -18,9 +18,7 @@
 
 ## Project Walkthrough
 
-<p align="center">
 https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
-</p>
 
 # Quick Navigation
 
@@ -70,19 +68,9 @@ The project demonstrates practical applications of digital input handling, analo
 
 ### 2.1 Tech Stack
 
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" width="65" />
-  <img src="https://techstack-generator.vercel.app/cpp-icon.svg" width="65" />
-  <img src="https://techstack-generator.vercel.app/c-icon.svg" width="65" />
-  <img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" />
-  <img src="https://techstack-generator.vercel.app/github-icon.svg" width="65" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="65" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="65" />
-</p>
-
-<p align="center">
-  Arduino Uno • C/C++ Firmware • Sensor Integration • Serial Debugging • GitHub Workflow
-</p>
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" width="65" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="65" /> | <img src="https://techstack-generator.vercel.app/cpp-icon.svg" width="65" /> | <img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="65" /> | <img src="https://techstack-generator.vercel.app/github-icon.svg" width="65" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="65" /> |
+| :----------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
+|                                                   **Arduino**                                                   |                                                    **C**                                                     |                                   **C++**                                    |                                   **Python**                                    |                                                    **Git**                                                     |                                   **GitHub**                                    |                                                     **VS Code**                                                     |
 
 ---
 
