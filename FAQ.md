@@ -2,7 +2,7 @@
 
 ## Can I use this project for coursework?
 
-Yes. You can use this project for learning and coursework if you provide clear attribution. Please review [LICENSE.md](LICENSE.md) and follow your institution policy on academic integrity.
+Yes. You can use this project for learning and coursework if you provide clear attribution. Please review [LICENSE](LICENSE) and follow your institution policy on academic integrity.
 
 ## What is this project and what does it do?
 

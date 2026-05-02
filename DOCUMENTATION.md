@@ -56,7 +56,7 @@ neopixel-led-cube/
 ├── DOCUMENTATION.md                Full technical reference (this file)
 ├── FAQ.md                          Frequently asked questions
 ├── CONTRIBUTING.md                 Contribution workflow and standards
-├── LICENSE.md                      MIT license
+├── LICENSE                         MIT license
 │
 ├── .github/
 │   └── ISSUE_TEMPLATE/
@@ -91,34 +91,34 @@ neopixel-led-cube/
 
 ### 3.1 Component List
 
-| Component | Specification | Quantity | Purpose |
-| --- | --- | --- | --- |
-| Arduino Uno | ATmega328P | 1 | Main microcontroller |
-| WS2812B LEDs | 5V addressable RGB | 64 | LED cube matrix |
-| Power Button | SPST momentary switch | 1 | System power toggle |
-| Mode Button | SPST momentary switch | 1 | Pattern selection |
-| LDR Sensor | Photoresistor 5-10kOhm | 1 | Ambient brightness detection |
-| Resistor | 10kOhm | 2 | Button pull-up resistors |
-| Resistor | 10kOhm | 1 | LDR voltage divider |
-| Buzzer | 5V active buzzer | 1 | Audio feedback |
-| Electrolytic Capacitor | 1000uF, 6.3V or higher | 1 | Power supply smoothing |
-| Breadboard | Standard 830-point | 1 | Component mounting |
-| Jumper Wires | Male-to-male | ~20 | Circuit connections |
-| Copper Wire | 22-24 AWG solid core | ~5 metres | LED cube structure |
-| Power Supply | 5V DC, 2A minimum | 1 | System power |
-| Power Jack | 2.1mm barrel connector | 1 | Power input |
-| USB Cable | Type A to Type B | 1 | Programming and serial |
-| Enclosure | Custom wooden box | 1 | Housing and protection |
+| Component              | Specification          | Quantity  | Purpose                      |
+| ---------------------- | ---------------------- | --------- | ---------------------------- |
+| Arduino Uno            | ATmega328P             | 1         | Main microcontroller         |
+| WS2812B LEDs           | 5V addressable RGB     | 64        | LED cube matrix              |
+| Power Button           | SPST momentary switch  | 1         | System power toggle          |
+| Mode Button            | SPST momentary switch  | 1         | Pattern selection            |
+| LDR Sensor             | Photoresistor 5-10kOhm | 1         | Ambient brightness detection |
+| Resistor               | 10kOhm                 | 2         | Button pull-up resistors     |
+| Resistor               | 10kOhm                 | 1         | LDR voltage divider          |
+| Buzzer                 | 5V active buzzer       | 1         | Audio feedback               |
+| Electrolytic Capacitor | 1000uF, 6.3V or higher | 1         | Power supply smoothing       |
+| Breadboard             | Standard 830-point     | 1         | Component mounting           |
+| Jumper Wires           | Male-to-male           | ~20       | Circuit connections          |
+| Copper Wire            | 22-24 AWG solid core   | ~5 metres | LED cube structure           |
+| Power Supply           | 5V DC, 2A minimum      | 1         | System power                 |
+| Power Jack             | 2.1mm barrel connector | 1         | Power input                  |
+| USB Cable              | Type A to Type B       | 1         | Programming and serial       |
+| Enclosure              | Custom wooden box      | 1         | Housing and protection       |
 
 ### 3.2 Pin Mapping
 
-| Arduino Pin | Component | Mode | Notes |
-| --- | --- | --- | --- |
-| D2 | Power Button | Digital input | Pull-up resistor to 5V, active LOW |
-| D3 | Mode Button | Digital input | Pull-up resistor to 5V, active LOW |
-| D4 | Buzzer | Digital output | Active buzzer, HIGH triggers tone |
-| D6 | NeoPixel Data | Digital output | Single-wire data line, keep short |
-| A0 | LDR Sensor | Analog input | Voltage divider with 10kOhm resistor |
+| Arduino Pin | Component     | Mode           | Notes                                |
+| ----------- | ------------- | -------------- | ------------------------------------ |
+| D2          | Power Button  | Digital input  | Pull-up resistor to 5V, active LOW   |
+| D3          | Mode Button   | Digital input  | Pull-up resistor to 5V, active LOW   |
+| D4          | Buzzer        | Digital output | Active buzzer, HIGH triggers tone    |
+| D6          | NeoPixel Data | Digital output | Single-wire data line, keep short    |
+| A0          | LDR Sensor    | Analog input   | Voltage divider with 10kOhm resistor |
 
 ### 3.3 Electrical Notes
 
@@ -206,8 +206,8 @@ Connect Serial Monitor in Arduino IDE at 9600 baud to observe live readings duri
 
 ### 4.7 Dependencies
 
-| Library | Source | Purpose |
-| --- | --- | --- |
+| Library           | Source                  | Purpose             |
+| ----------------- | ----------------------- | ------------------- |
 | Adafruit NeoPixel | Arduino Library Manager | WS2812B LED control |
 
 Install via Arduino IDE: **Tools > Manage Libraries**, search for "Adafruit NeoPixel" and install the latest version.
@@ -307,7 +307,7 @@ Install via Arduino IDE: **Tools > Manage Libraries**, search for "Adafruit NeoP
 
 ## 9. License
 
-This project is released under the MIT License. See [LICENSE.md](LICENSE.md).
+This project is released under the MIT License. See [LICENSE](LICENSE).
 
 ---
 
