@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7928ca,100:ff0080&height=180&section=header&text=NeoPixel%20LED%20Cube&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=4x4x4%20Interactive%20LED%20Display%20%7C%20Arduino%20%7C%20WS2812B&descAlignY=60&descSize=16" />
+</p>
+
 # NeoPixel LED Cube
 
 <p align="center">
@@ -15,7 +19,9 @@
 
 A 4x4x4 interactive NeoPixel LED cube built on Arduino Uno with multiple animation modes, adaptive brightness via LDR and physical button controls.
 
-## Project Walkthrough
+<h2 align="center">Project Walkthrough</h2>
+
+<p align="center"><em>Click the video below to watch the full demo.</em></p>
 
 https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
 
@@ -43,23 +49,25 @@ https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
 
 ## Documentation Hub
 
-- Full technical documentation: [PROJECT_DETAILS.md](PROJECT_DETAILS.md)
-- Frequently asked questions: [FAQ.md](FAQ.md)
-- Hardware guide: [hardware/README.md](hardware/README.md)
-- Software guide: [software/README.md](software/README.md)
-- Media gallery: [media/Gallery.md](media/Gallery.md)
-- Contribution guide: [CONTRIBUTING.md](CONTRIBUTING.md)
+<p align="center">
+  <a href="TECHNICAL_REFERENCE.md">📖 Technical Reference</a> &nbsp;•&nbsp;
+  <a href="FAQ.md">❓ FAQ</a> &nbsp;•&nbsp;
+  <a href="hardware/README.md">🔧 Hardware Guide</a> &nbsp;•&nbsp;
+  <a href="software/README.md">💻 Software Guide</a> &nbsp;•&nbsp;
+  <a href="media/Gallery.md">🖼️ Gallery</a> &nbsp;•&nbsp;
+  <a href="CONTRIBUTING.md">🤝 Contributing</a>
+</p>
 
 ## Tested Environment
 
-| Item | Tested Value |
-| --- | --- |
-| Arduino IDE | 2.x |
-| Board | Arduino Uno (ATmega328P) |
-| LED Type | WS2812B |
-| LED Count | 64 |
-| Supply Used During Demo | 5V DC, 2A+ |
-| Serial Baud | 9600 |
+| Item                    | Tested Value             |
+| ----------------------- | ------------------------ |
+| Arduino IDE             | 2.x                      |
+| Board                   | Arduino Uno (ATmega328P) |
+| LED Type                | WS2812B                  |
+| LED Count               | 64                       |
+| Supply Used During Demo | 5V DC, 2A+               |
+| Serial Baud             | 9600                     |
 
 ## Contact and Support
 
