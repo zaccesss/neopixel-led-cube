@@ -1,9 +1,9 @@
 ---
 name: Bug report
 about: Report something that is not working as expected
-title: "fix: "
+title: 'fix: '
 labels: bug
-assignees: ""
+assignees: ''
 ---
 
 ## What happened
@@ -16,9 +16,9 @@ Describe what you expected to happen.
 
 ## Steps to reproduce
 
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 ## Environment
 
@@ -28,4 +28,4 @@ Describe what you expected to happen.
 
 ## Logs or screenshots
 
-Add serial output, images, or short video if useful.
+Add serial output, images or short video if useful.

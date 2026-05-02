@@ -1,9 +1,9 @@
 ---
 name: Documentation update
-about: Suggest improvements to README, FAQ, or other docs
-title: "docs: "
+about: Suggest improvements to README, FAQ or other docs
+title: 'docs: '
 labels: documentation
-assignees: ""
+assignees: ''
 ---
 
 ## What
@@ -16,8 +16,8 @@ Explain why the change is needed.
 
 ## Acceptance criteria
 
-- [ ] 
-- [ ] 
+- [ ]
+- [ ]
 
 ## Notes
 
