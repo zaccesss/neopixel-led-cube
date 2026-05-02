@@ -1,6 +1,37 @@
-# Project Details
+# Technical Reference — NeoPixel LED Cube
 
-This file contains the full technical details for the NeoPixel LED Cube project.
+Full technical documentation for the NeoPixel LED Cube project. Covers hardware architecture, software design, build validation, troubleshooting and future development notes.
+
+> Back to [README.md](README.md) &nbsp;|&nbsp; [FAQ.md](FAQ.md) &nbsp;|&nbsp; [media/Gallery.md](media/Gallery.md)
+
+---
+
+## Table of Contents
+
+- [1. Project Overview](#1-project-overview)
+- [2. Hardware Architecture](#2-hardware-architecture)
+  - [2.1 Component List](#21-component-list)
+  - [2.2 Pin Mapping](#22-pin-mapping)
+  - [2.3 Electrical Notes](#23-electrical-notes)
+- [3. Software Architecture](#3-software-architecture)
+  - [3.1 Main Runtime Flow](#31-main-runtime-flow)
+  - [3.2 Implemented Animation Modes](#32-implemented-animation-modes)
+  - [3.3 Brightness Control](#33-brightness-control)
+  - [3.4 Dependencies](#34-dependencies)
+- [4. Build and Validation](#4-build-and-validation)
+  - [4.1 Build Process Summary](#41-build-process-summary)
+  - [4.2 Validation Checklist](#42-validation-checklist)
+- [5. Troubleshooting Guide](#5-troubleshooting-guide)
+  - [LEDs not responding](#leds-not-responding)
+  - [Buttons inconsistent](#buttons-inconsistent)
+  - [Brightness not changing](#brightness-not-changing)
+- [6. Media and Related Docs](#6-media-and-related-docs)
+- [7. Future Enhancements](#7-future-enhancements)
+- [8. License](#8-license)
+- [9. Attribution](#9-attribution)
+- [10. Last Updated](#10-last-updated)
+
+---
 
 ## 1. Project Overview
 
@@ -12,28 +43,28 @@ The system demonstrates practical applications of digital input handling, analog
 
 ### 2.1 Component List
 
-| Component | Specification | Quantity | Purpose |
-| --- | --- | --- | --- |
-| Arduino Uno | ATmega328P | 1 | Main microcontroller |
-| WS2812B LEDs | 5V addressable RGB | 64 | LED cube matrix |
-| Power Button | Digital momentary switch | 1 | System power toggle |
-| Mode Button | Digital momentary switch | 1 | Pattern selection |
-| LDR Sensor | Analog light sensor | 1 | Ambient brightness detection |
-| Buzzer | 5V active buzzer | 1 | Audio feedback |
-| Electrolytic Capacitor | 1000uF, 6.3V+ | 1 | Power supply smoothing |
-| Breadboard | Standard size | 1 | Component mounting |
-| Power Supply | 5V, 2A+ | 1 | System power |
-| Enclosure | Custom wooden box | 1 | Housing and protection |
+| Component              | Specification            | Quantity | Purpose                      |
+| ---------------------- | ------------------------ | -------- | ---------------------------- |
+| Arduino Uno            | ATmega328P               | 1        | Main microcontroller         |
+| WS2812B LEDs           | 5V addressable RGB       | 64       | LED cube matrix              |
+| Power Button           | Digital momentary switch | 1        | System power toggle          |
+| Mode Button            | Digital momentary switch | 1        | Pattern selection            |
+| LDR Sensor             | Analog light sensor      | 1        | Ambient brightness detection |
+| Buzzer                 | 5V active buzzer         | 1        | Audio feedback               |
+| Electrolytic Capacitor | 1000uF, 6.3V+            | 1        | Power supply smoothing       |
+| Breadboard             | Standard size            | 1        | Component mounting           |
+| Power Supply           | 5V, 2A+                  | 1        | System power                 |
+| Enclosure              | Custom wooden box        | 1        | Housing and protection       |
 
 ### 2.2 Pin Mapping
 
-| Arduino Pin | Component | Function |
-| --- | --- | --- |
-| D2 | Power Button | Digital input |
-| D3 | Mode Button | Digital input |
-| D4 | Buzzer | Digital output |
-| D6 | NeoPixel Data | LED data output |
-| A0 | LDR Sensor | Analog input |
+| Arduino Pin | Component     | Function        |
+| ----------- | ------------- | --------------- |
+| D2          | Power Button  | Digital input   |
+| D3          | Mode Button   | Digital input   |
+| D4          | Buzzer        | Digital output  |
+| D6          | NeoPixel Data | LED data output |
+| A0          | LDR Sensor    | Analog input    |
 
 ### 2.3 Electrical Notes
 
