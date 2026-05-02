@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7928ca,100:ff0080&height=180&section=header&text=NeoPixel%20LED%20Cube&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=4x4x4%20Interactive%20LED%20Display%20%7C%20Arduino%20%7C%20WS2812B&descAlignY=60&descSize=16" />
-</p>
-
 # NeoPixel LED Cube
 
 <p align="center">
@@ -50,7 +46,7 @@ https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
 ## Documentation Hub
 
 <p align="center">
-  <a href="TECHNICAL_REFERENCE.md">📖 Technical Reference</a> &nbsp;•&nbsp;
+  <a href="DOCUMENTATION.md">📖 Documentation</a> &nbsp;•&nbsp;
   <a href="FAQ.md">❓ FAQ</a> &nbsp;•&nbsp;
   <a href="hardware/README.md">🔧 Hardware Guide</a> &nbsp;•&nbsp;
   <a href="software/README.md">💻 Software Guide</a> &nbsp;•&nbsp;
