@@ -36,6 +36,10 @@ See [software/README.md](software/README.md) for architecture and function detai
 
 Open the sketch in Arduino IDE, select Arduino Uno, select the correct COM port, compile and upload. I summarized this in [software/README.md](software/README.md).
 
+## Which Arduino library is required?
+
+The project depends on the Adafruit NeoPixel library. Install it from Arduino Library Manager before compiling.
+
 ## Which LED patterns are included right now?
 
 The current build includes Colour Wipe, Smooth RGB Fade, Fire Effect and Rainbow Cycle.
@@ -52,6 +56,10 @@ One button toggles system power and one button cycles patterns. The firmware use
 
 Yes. I print runtime diagnostics over serial at 9600 baud, including power state, selected pattern and mapped brightness values.
 
+## What baud rate should I use in Serial Monitor?
+
+Use 9600 baud to match the firmware configuration.
+
 ## The LEDs are not lighting correctly. What should I check first?
 
 Check power wiring first, then verify shared ground between Arduino and LED power, then confirm the data line from Arduino to the first LED. Also confirm your LED order, solder joints and orientation.
@@ -63,6 +71,14 @@ Check button wiring, pull-up or pull-down configuration and physical switch qual
 ## Can I use this code with a different LED count or cube size?
 
 Yes. Update the LED count constants, test current draw and validate each pattern with the new geometry.
+
+## Why is my cube dimmer than expected?
+
+Brightness is intentionally adaptive. The LDR can reduce LED output when ambient light is high. Check sensor placement and mapping values if you want a brighter default.
+
+## Why do animations sometimes look slow?
+
+Pattern speed is controlled by delay values and timing logic in each effect. Reducing delay values can make transitions faster, but too little delay can reduce visual smoothness.
 
 ## Where is the hardware documentation?
 
@@ -79,6 +95,10 @@ Yes. Add a new pattern function and include it in the mode switch in the main lo
 ## Can I contribute improvements?
 
 Yes. I welcome improvements through issues and pull requests. Include a clear summary, test notes and screenshots or video when the change affects visuals.
+
+## Which branch workflow should contributors follow?
+
+Use a topic branch from main, use clear type-prefixed commit messages and open a PR with summary, changes and test steps.
 
 ## Where can I find a full project overview in one place?
 
