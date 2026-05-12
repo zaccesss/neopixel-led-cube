@@ -69,7 +69,7 @@ https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
 
 If you have questions, open an issue in this repository first.
 
-You can also contact me directly at contact@zacess.com.
+You can also contact me directly at eng@isaacadjei.me.
 
 <p align="center">
   <b>Project Status:</b> Completed<br>

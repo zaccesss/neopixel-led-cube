@@ -110,7 +110,7 @@ Please open an issue in this repository with your setup details and question.
 
 ## Can I contact you directly?
 
-Yes. Email me at contact@zacess.com.
+Yes. Email me at eng@isaacadjei.me.
 
 ## Last Updated
 
