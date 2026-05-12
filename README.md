@@ -7,7 +7,7 @@
   <a href="https://www.linkedin.com/in/isaacadjei">
     <img src="https://img.shields.io/badge/LinkedIn-Isaac_Adjei-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>
-  <a href="mailto:offices.isaac@gmail.com">
+  <a href="mailto:eng@isaacadjei.me">
     <img src="https://img.shields.io/badge/Email-Contact-ff6f61?style=for-the-badge&logo=gmail&logoColor=white">
   </a>
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
@@ -69,7 +69,7 @@ https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
 
 If you have questions, open an issue in this repository first.
 
-You can also contact me directly at contact@zacess.com.
+You can also contact me directly at eng@isaacadjei.me.
 
 <p align="center">
   <b>Project Status:</b> Completed<br>
