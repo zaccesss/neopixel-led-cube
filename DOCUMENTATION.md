@@ -317,6 +317,6 @@ Lead Developer: Isaac Zac Adjei
 
 Team: NeoPixel Innovators
 
-Repository: https://github.com/zaccessss/neopixel-led-cube
+Repository: https://github.com/zaccesss/neopixel-led-cube
 
 Last Updated: May 2026
