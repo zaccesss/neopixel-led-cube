@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
 </p>
 
-A 4x4x4 interactive NeoPixel LED cube built on Arduino Uno with multiple animation modes, adaptive brightness via LDR and physical button controls.
+I built this 4x4x4 NeoPixel LED cube on an Arduino Uno as an academic engineering project. It runs four animated lighting patterns, adapts its brightness to ambient light through an LDR sensor and responds to two physical buttons for power and pattern control.
 
 <h2 align="center">Project Walkthrough</h2>
 
@@ -31,17 +31,22 @@ https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
 
 ## Core Features
 
-- 64 addressable WS2812B LEDs in 4x4x4 layout
-- Four built-in animations: Colour Wipe, Smooth RGB Fade, Fire Effect, Rainbow Cycle
-- Auto brightness mapping with LDR sensor
+- 64 addressable WS2812B LEDs in a 4x4x4 layout
+- Four built-in animations: Colour Wipe, Smooth RGB Fade, Fire Effect and Rainbow Cycle
+- Auto brightness mapping with an LDR sensor
 - Real-time serial debug output
 - Power and mode controls through physical buttons
 
 ## Tech Stack
 
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" width="65" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="65" /> | <img src="https://techstack-generator.vercel.app/cpp-icon.svg" width="65" /> | <img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="65" /> | <img src="https://techstack-generator.vercel.app/github-icon.svg" width="65" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="65" /> |
-| :------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
-|                                               **Arduino**                                                |                                            **C**                                             |                                   **C++**                                    |                                   **Python**                                    |                                             **Git**                                              |                                   **GitHub**                                    |                                              **VS Code**                                               |
+<p align="center">
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white">
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white">
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+</p>
 
 ## Documentation Hub
 
@@ -58,24 +63,13 @@ https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
 
 | Item                    | Tested Value             |
 | ----------------------- | ------------------------ |
-| Arduino IDE             | 2.x                      |
-| Board                   | Arduino Uno (ATmega328P) |
-| LED Type                | WS2812B                  |
-| LED Count               | 64                       |
-| Supply Used During Demo | 5V DC, 2A+               |
-| Serial Baud             | 9600                     |
+| Arduino IDE              | 2.x                       |
+| Board                    | Arduino Uno (ATmega328P)  |
+| LED Type                 | WS2812B                   |
+| LED Count                | 64                        |
+| Supply Used During Demo  | 5V DC, 2A+                |
+| Serial Baud              | 9600                      |
 
 ## Contact and Support
 
-If you have questions, open an issue in this repository first.
-
-You can also contact me directly at eng@isaacadjei.me.
-
-<p align="center">
-  <b>Project Status:</b> Completed<br>
-  <b>Last Updated:</b> May 2026
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" />
-</p>
+If you have questions, I encourage you to open an issue in this repository first. You can also reach me directly at eng@isaacadjei.me.
