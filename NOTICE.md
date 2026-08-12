@@ -1,8 +1,16 @@
 # Notice
 
-This notice accompanies the MIT License in [LICENSE](LICENSE). The MIT License
-governs the code; the notes below record how I would like this academic project
-credited and reused.
+This repository is dual-licensed:
+
+- The written and visual content (README, DOCUMENTATION.md, FAQ.md and everything
+  under `media/`) is licensed under the Creative Commons
+  Attribution-NonCommercial-NoDerivatives 4.0 International Licence; see
+  [LICENSE](LICENSE).
+- The Arduino sketch under `software/neopixel_cube/` is licensed separately
+  under the MIT Licence, the full text of which follows below.
+
+The notes below record how this academic project should be credited and
+reused, on top of the terms of both licences.
 
 ## Academic Use Notice
 
@@ -34,11 +42,12 @@ This project is provided as an educational resource. Students and educators are 
 - Use the project as inspiration for their own work
 - Share modifications and improvements with the community
 
-However, direct submission of this work or substantial portions thereof as your own academic assignment without proper attribution constitutes plagiarism and violates both this license's spirit and most academic integrity policies.
+> [!WARNING]
+> Direct submission of this work (or substantial portions of it) as your own academic assignment without proper attribution constitutes plagiarism and violates both this licence's spirit and most academic integrity policies.
 
 ### Commercial Use
 
-While the MIT License permits commercial use, users should be aware that some hardware components and libraries used in this project may have their own licensing terms. Please review all dependencies before commercial deployment.
+The Arduino sketch is MIT-licensed and permits commercial use. The written and visual content is licensed under CC BY-NC-ND 4.0 and does not permit commercial use. Some hardware components and libraries used in this project may also have their own licensing terms, so review all dependencies before commercial deployment.
 
 ---
 
@@ -46,4 +55,30 @@ While the MIT License permits commercial use, users should be aware that some ha
 **Lead Developer:** Isaac "Zac" Adjei  
 **Project Year:** 2025
 
-**Last Reviewed:** July 2026
+**Last Reviewed:** August 2026
+
+---
+
+```text
+MIT License
+
+Copyright Isaac Adjei <https://isaacadjei.me/>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```

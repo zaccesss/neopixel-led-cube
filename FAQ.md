@@ -2,15 +2,16 @@
 
 ## Can I use this project for coursework?
 
-Yes. You can use this project for learning and coursework if you provide clear attribution. Please review [LICENSE](LICENSE) and follow your institution policy on academic integrity.
+> [!IMPORTANT]
+> Yes, with clear attribution. Review [LICENSE](LICENSE) and [NOTICE.md](NOTICE.md) and follow your institution's academic integrity policy. Submitting this work (or a substantial portion of it) as your own original assignment is not permitted.
 
 ## What is this project and what does it do?
 
-This is a 4x4x4 NeoPixel LED cube project built with an Arduino Uno. I designed it to run multiple animation modes, react to ambient light with an LDR sensor and provide button-based interaction for power and mode changes.
+This is a 4x4x4 NeoPixel LED cube project built with an Arduino Uno. It was designed to run multiple animation modes, react to ambient light with an LDR sensor and provide button-based interaction for power and mode changes.
 
 ## What hardware do I need to build the same setup?
 
-I list the full component breakdown in [hardware/README.md](hardware/README.md). At minimum you need an Arduino Uno, 64 WS2812B LEDs, a stable 5V power supply, two buttons, an LDR, a buzzer and basic wiring materials.
+The full component breakdown is listed in [hardware/README.md](hardware/README.md). At minimum you need an Arduino Uno, 64 WS2812B LEDs, a stable 5V power supply, two buttons, an LDR, a buzzer and basic wiring materials.
 
 ## What power supply should I use?
 
@@ -34,7 +35,7 @@ See [software/README.md](software/README.md) for architecture and function detai
 
 ## How do I upload and run the code on my board?
 
-Open the sketch in Arduino IDE, select Arduino Uno, select the correct COM port, compile and upload. I summarized this in [software/README.md](software/README.md).
+Open the sketch in Arduino IDE, select Arduino Uno, select the correct COM port, compile and upload. This is summarised in [software/README.md](software/README.md).
 
 ## Which Arduino library is required?
 
@@ -54,7 +55,7 @@ One button toggles system power and one button cycles patterns. The firmware use
 
 ## Can I monitor values while the cube is running?
 
-Yes. I print runtime diagnostics over serial at 9600 baud, including power state, selected pattern and mapped brightness values.
+Yes. Runtime diagnostics are printed over serial at 9600 baud, including power state, selected pattern and mapped brightness values.
 
 ## What baud rate should I use in Serial Monitor?
 
@@ -94,7 +95,7 @@ Yes. Add a new pattern function and include it in the mode switch in the main lo
 
 ## Can I contribute improvements?
 
-Yes. I welcome improvements through issues and pull requests. Include a clear summary, test notes and screenshots or video when the change affects visuals.
+Yes. Improvements through issues and pull requests are welcome. Include a clear summary, test notes and screenshots or video when the change affects visuals.
 
 ## Which branch workflow should contributors follow?
 
@@ -110,8 +111,8 @@ Please open an issue in this repository with your setup details and question.
 
 ## Can I contact you directly?
 
-Yes. Email me at eng@isaacadjei.me.
+Yes. Email me at [eng@isaacadjei.me](mailto:eng@isaacadjei.me) or through [isaacadjei.me/contact](https://isaacadjei.me/contact).
 
 ## Last Updated
 
-May 2026
+August 2026

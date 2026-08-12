@@ -33,7 +33,7 @@ Full technical documentation for the NeoPixel LED Cube project. Covers hardware 
   - [Upload fails in Arduino IDE](#upload-fails-in-arduino-ide)
 - [7. Media and Related Docs](#7-media-and-related-docs)
 - [8. Future Enhancements](#8-future-enhancements)
-- [9. License](#9-license)
+- [9. Licence](#9-licence)
 - [10. Attribution](#10-attribution)
 
 ---
@@ -56,7 +56,7 @@ neopixel-led-cube/
 ├── DOCUMENTATION.md                Full technical reference (this file)
 ├── FAQ.md                          Frequently asked questions
 ├── CONTRIBUTING.md                 Contribution workflow and standards
-├── LICENSE                         MIT license
+├── LICENSE                         MIT licence
 │
 ├── .github/
 │   └── ISSUE_TEMPLATE/
@@ -305,18 +305,20 @@ Install via Arduino IDE: **Tools > Manage Libraries**, search for "Adafruit NeoP
 
 ---
 
-## 9. License
+## 9. Licence
 
-This project is released under the MIT License. See [LICENSE](LICENSE).
+> [!NOTE]
+> This project is dual-licensed. The written and visual content is released under CC BY-NC-ND 4.0. The Arduino sketch under `software/neopixel_cube/` is released under the MIT Licence. See [LICENSE](LICENSE) and [NOTICE.md](NOTICE.md) for the full terms.
 
 ---
 
 ## 10. Attribution
 
-Lead Developer: Isaac Zac Adjei
+> [!NOTE]
+> Lead Developer: Isaac "Zac" Adjei
+>
+> Team: NeoPixel Innovators
+>
+> Repository: [github.com/zaccesss/neopixel-led-cube](https://github.com/zaccesss/neopixel-led-cube)
 
-Team: NeoPixel Innovators
-
-Repository: https://github.com/zaccesss/neopixel-led-cube
-
-Last Updated: May 2026
+Last Updated: August 2026
