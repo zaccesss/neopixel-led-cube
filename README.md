@@ -1,19 +1,6 @@
 # NeoPixel LED Cube
 
-<p align="center">
-  <a href="https://isaacadjei.me">
-    <img src="https://img.shields.io/badge/Website-isaacadjei.me-111111?style=for-the-badge&logo=firefox&logoColor=white">
-  </a>
-  <a href="https://www.linkedin.com/in/isaacadjei">
-    <img src="https://img.shields.io/badge/LinkedIn-Isaac_Adjei-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white">
-  </a>
-  <a href="mailto:eng@isaacadjei.me">
-    <img src="https://img.shields.io/badge/Email-Contact-ff6f61?style=for-the-badge&logo=gmail&logoColor=white">
-  </a>
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
-</p>
-
-I built this 4x4x4 NeoPixel LED cube on an Arduino Uno as an academic engineering project. It runs four animated lighting patterns, adapts its brightness to ambient light through an LDR sensor and responds to two physical buttons for power and pattern control.
+This is a 4x4x4 NeoPixel LED cube built on an Arduino Uno as an academic engineering project. It runs four animated lighting patterns, adapts its brightness to ambient light through an LDR sensor and responds to two physical buttons for power and pattern control.
 
 <h2 align="center">Project Walkthrough</h2>
 
@@ -39,24 +26,23 @@ https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
 
 ## Tech Stack
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white">
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white">
-  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
-</p>
+<div align="center">
+
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" width="60" /> | <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++" width="60" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" width="60" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="60" /> | <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="60" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="60" /> |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Arduino** | **C++** | **C** | **Git** | **GitHub** | **VS Code** |
+
+</div>
 
 ## Documentation Hub
 
 <p align="center">
-  <a href="DOCUMENTATION.md">📖 Documentation</a> &nbsp;•&nbsp;
-  <a href="FAQ.md">❓ FAQ</a> &nbsp;•&nbsp;
-  <a href="hardware/README.md">🔧 Hardware Guide</a> &nbsp;•&nbsp;
-  <a href="software/README.md">💻 Software Guide</a> &nbsp;•&nbsp;
-  <a href="media/Gallery.md">🖼️ Gallery</a> &nbsp;•&nbsp;
-  <a href="CONTRIBUTING.md">🤝 Contributing</a>
+  <a href="DOCUMENTATION.md">Documentation</a> &nbsp;•&nbsp;
+  <a href="FAQ.md">FAQ</a> &nbsp;•&nbsp;
+  <a href="hardware/README.md">Hardware Guide</a> &nbsp;•&nbsp;
+  <a href="software/README.md">Software Guide</a> &nbsp;•&nbsp;
+  <a href="media/Gallery.md">Gallery</a> &nbsp;•&nbsp;
+  <a href="CONTRIBUTING.md">Contributing</a>
 </p>
 
 ## Tested Environment
@@ -72,4 +58,5 @@ https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
 
 ## Contact and Support
 
-If you have questions, I encourage you to open an issue in this repository first. You can also reach me directly at eng@isaacadjei.me.
+> [!TIP]
+> Questions are best raised as an issue in this repository first. You can also reach me directly at [eng@isaacadjei.me](mailto:eng@isaacadjei.me) or through [isaacadjei.me/contact](https://isaacadjei.me/contact).

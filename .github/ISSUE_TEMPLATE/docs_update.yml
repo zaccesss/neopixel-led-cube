@@ -1,0 +1,35 @@
+name: Documentation update
+description: Suggest improvements to README, FAQ or other docs
+title: "docs: "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      description: Describe what documentation should be changed.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: Explain why the change is needed.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ]
+        - [ ]
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Add links or context that may help.
+    validations:
+      required: false

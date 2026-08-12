@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: NeoPixel LED Cube
+authors:
+  - family-names: Adjei
+    given-names: Isaac
+    website: https://isaacadjei.me
+version: 1.0.1
+date-released: "2025-01-01"
+repository-code: https://github.com/zaccesss/neopixel-led-cube
+license: CC-BY-NC-ND-4.0
+type: software
+keywords:
+  - NeoPixel
+  - Arduino
+  - LED cube
+  - WS2812B
+  - embedded systems
