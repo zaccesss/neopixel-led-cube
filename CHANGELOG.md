@@ -7,6 +7,13 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [1.0.3] - 2026-08-12
+
+### Changed
+
+- Badge row rebuilt as flat, left-aligned licence, version and DOI badges
+- DOI badge now uses the Zenodo concept DOI, which always resolves to the latest release
+
 ## [1.0.2] - 2026-08-12
 
 ### Added
