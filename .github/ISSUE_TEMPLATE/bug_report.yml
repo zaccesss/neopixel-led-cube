@@ -1,0 +1,54 @@
+name: Bug report
+description: Report something that is not working as expected
+title: "fix: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Describe the problem clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: Describe what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: input
+    id: board
+    attributes:
+      label: Board
+    validations:
+      required: false
+  - type: input
+    id: ide-version
+    attributes:
+      label: Arduino IDE version
+    validations:
+      required: false
+  - type: input
+    id: power-supply
+    attributes:
+      label: Power supply
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Add serial output, images or short video if useful.
+    validations:
+      required: false
