@@ -1,10 +1,8 @@
 # NeoPixel LED Cube
 
-<p align="center">
-  <a href="https://doi.org/10.5281/zenodo.21903764">
-    <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21903764-blue?style=for-the-badge">
-  </a>
-</p>
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.3-blue.svg)](CHANGELOG.md)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21903764-blue.svg)](https://doi.org/10.5281/zenodo.21903764)
 
 This is a 4x4x4 NeoPixel LED cube built on an Arduino Uno as an academic engineering project. It runs four animated lighting patterns, adapts its brightness to ambient light through an LDR sensor and responds to two physical buttons for power and pattern control.
 
