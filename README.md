@@ -1,8 +1,8 @@
 # NeoPixel LED Cube
 
 <p align="center">
-  <a href="https://doi.org/10.5281/zenodo.21903765">
-    <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21903765-blue?style=for-the-badge">
+  <a href="https://doi.org/10.5281/zenodo.21903764">
+    <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21903764-blue?style=for-the-badge">
   </a>
 </p>
 
@@ -65,7 +65,7 @@ https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
 ## Citing This Work
 
 > [!NOTE]
-> This repository is registered with Zenodo and has a permanent, citable DOI: [10.5281/zenodo.21903765](https://doi.org/10.5281/zenodo.21903765). See [CITATION.cff](CITATION.cff) for the full citation. The "Cite this repository" option on GitHub can also be used.
+> This repository is registered with Zenodo and has a permanent, citable DOI: [10.5281/zenodo.21903764](https://doi.org/10.5281/zenodo.21903764). See [CITATION.cff](CITATION.cff) for the full citation. The "Cite this repository" option on GitHub can also be used.
 
 ## Contact and Support
 
