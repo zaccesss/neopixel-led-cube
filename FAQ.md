@@ -115,4 +115,4 @@ Yes. Email me at [eng@isaacadjei.me](mailto:eng@isaacadjei.me) or through [isaac
 
 ## Last Updated
 
-August 2026
+November 2026

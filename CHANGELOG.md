@@ -7,6 +7,18 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [Unreleased]
+
+## [1.1.0] - 2026-11-03
+
+### Added
+
+- A system diagram in the README: the two buttons and the LDR, the Arduino Uno loop, the four patterns and the four LED layers on one data line
+
+### Changed
+
+- Routine tidy-up
+
 ## [1.0.3] - 2026-08-12
 
 ### Changed

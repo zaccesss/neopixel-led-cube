@@ -1,7 +1,8 @@
 # NeoPixel LED Cube
 
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.3-blue.svg)](CHANGELOG.md)
+[![Release](https://img.shields.io/github/v/release/zaccesss/neopixel-led-cube?label=release)](https://github.com/zaccesss/neopixel-led-cube/releases/latest)
+[![Licence: CC BY-NC-ND 4.0](https://img.shields.io/badge/licence-CC%20BY--NC--ND%204.0-lightgrey.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](CHANGELOG.md)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21903764-blue.svg)](https://doi.org/10.5281/zenodo.21903764)
 
 This is a 4x4x4 NeoPixel LED cube built on an Arduino Uno as an academic engineering project. It runs four animated lighting patterns, adapts its brightness to ambient light through an LDR sensor and responds to two physical buttons for power and pattern control.
@@ -27,6 +28,33 @@ https://github.com/user-attachments/assets/58bd4d04-e2ed-466e-9ed1-12fc8279b9ec
 - Auto brightness mapping with an LDR sensor
 - Real-time serial debug output
 - Power and mode controls through physical buttons
+
+## How It Fits Together
+
+```mermaid
+flowchart LR
+    subgraph INPUTS["Inputs"]
+        PWR["Power button<br/>D2"]
+        MODE["Mode button<br/>D3"]
+        LDR["LDR light sensor<br/>A0"]
+    end
+    subgraph MCU["Arduino Uno"]
+        LOOP["Main loop<br/>debounce, state machine<br/>and brightness mapping"]
+        PATTERNS["Patterns<br/>Colour Wipe, Smooth RGB Fade,<br/>Fire Effect, Rainbow Cycle"]
+    end
+    subgraph CUBE["4x4x4 cube, 64 WS2812B LEDs"]
+        L1["Layer 1<br/>16 LEDs"] --> L2["Layer 2<br/>16 LEDs"] --> L3["Layer 3<br/>16 LEDs"] --> L4["Layer 4<br/>16 LEDs"]
+    end
+    PWR -- "toggles on and off" --> LOOP
+    MODE -- "next pattern" --> LOOP
+    LDR -- "0 to 1023" --> LOOP
+    LOOP -- "selects one, brightness 20 to 255" --> PATTERNS
+    PATTERNS -- "one data line on D6" --> L1
+    LOOP -- "100 ms beep on D4" --> BUZZ["Buzzer"]
+    LOOP -- "9600 baud" --> SERIAL["Serial monitor<br/>state and sensor readings"]
+```
+
+One data wire leaves D6 and runs through all 64 LEDs in a single chain, so each pattern writes the whole cube in one pass. The LDR reading sets the brightness for every frame and the two buttons are polled with software debounce, so the animations never block input.
 
 ## Tech Stack
 

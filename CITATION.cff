@@ -5,8 +5,8 @@ authors:
   - family-names: Adjei
     given-names: Isaac
     website: https://isaacadjei.me
-version: 1.0.3
-date-released: "2026-08-12"
+version: 1.1.0
+date-released: "2026-11-03"
 doi: 10.5281/zenodo.21903764
 repository-code: https://github.com/zaccesss/neopixel-led-cube
 license: CC-BY-NC-ND-4.0

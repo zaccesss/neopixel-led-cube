@@ -321,4 +321,4 @@ Install via Arduino IDE: **Tools > Manage Libraries**, search for "Adafruit NeoP
 >
 > Repository: [github.com/zaccesss/neopixel-led-cube](https://github.com/zaccesss/neopixel-led-cube)
 
-Last Updated: August 2026
+Last Updated: November 2026
